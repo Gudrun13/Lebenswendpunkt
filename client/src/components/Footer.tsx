@@ -9,7 +9,9 @@ export function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-serif text-accent">Lebenswendepunkt</h3>
+            <Link href="/">
+              <a className="text-2xl font-serif text-accent hover:text-accent/80 transition-colors">Lebenswendepunkt</a>
+            </Link>
           </div>
 
           {/* Legal Links - Horizontal */}
