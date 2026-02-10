@@ -61,8 +61,10 @@ export function Hero() {
             </p>
             
             <div className="pt-4 flex justify-center md:justify-start">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto font-serif">
-                Kostenloses Erstgespräch vereinbaren
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto font-serif" asChild>
+                <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
+                  Kostenloses Erstgespräch vereinbaren
+                </a>
               </Button>
             </div>
           </div>

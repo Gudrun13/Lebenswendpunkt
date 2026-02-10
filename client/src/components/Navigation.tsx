@@ -29,8 +29,10 @@ export function Navigation() {
               {link.name}
             </a>
           ))}
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif px-6">
-            Erstgespräch
+          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif px-6" asChild>
+            <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
+              Erstgespräch
+            </a>
           </Button>
         </nav>
 
@@ -54,8 +56,10 @@ export function Navigation() {
                   {link.name}
                 </a>
               ))}
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-serif">
-                Erstgespräch
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-serif" asChild>
+                <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
+                  Erstgespräch
+                </a>
               </Button>
             </nav>
           </SheetContent>
