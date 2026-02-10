@@ -14,11 +14,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex justify-center mb-8">
+          <div className="w-full mb-12">
             <img 
-              src="/logo-new.jpg" 
-              alt="Lebenswendepunkt Logo" 
-              className="h-32 md:h-48 w-auto object-contain rounded-lg shadow-lg" 
+              src="/banner-header.png" 
+              alt="Lebenswendepunkt Banner" 
+              className="w-full h-auto object-cover rounded-xl shadow-2xl" 
             />
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-6 leading-tight">
