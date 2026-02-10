@@ -4,35 +4,28 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white py-12 md:py-16 mt-auto">
+    <footer className="bg-primary text-white py-8 mt-auto">
       <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
-          {/* Column 1: Brand */}
-          <div className="space-y-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+          {/* Brand */}
+          <div>
             <h3 className="text-2xl font-serif text-accent">Lebenswendepunkt</h3>
-            <p className="text-white/80 max-w-xs leading-relaxed">
-              Begleitung in Zeiten der Veränderung. Finden Sie Klarheit, Mut und neue Perspektiven für Ihren Weg.
-            </p>
           </div>
 
-          {/* Column 2: Legal & Newsletter */}
-          <div className="space-y-4 md:text-right">
-            <h4 className="text-lg font-bold uppercase tracking-wider text-accent/80">Rechtliches</h4>
-            <ul className="space-y-2">
-              <li><Link href="/newsletter" className="text-white/70 hover:text-accent transition-colors">Newsletter Anmeldung</Link></li>
+          {/* Legal Links - Horizontal */}
+          <div>
+            <ul className="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-sm">
+              <li><Link href="/newsletter" className="text-white/70 hover:text-accent transition-colors">Newsletter</Link></li>
               <li><Link href="/impressum" className="text-white/70 hover:text-accent transition-colors">Impressum</Link></li>
-              <li><Link href="/datenschutz" className="text-white/70 hover:text-accent transition-colors">Datenschutzerklärung</Link></li>
+              <li><Link href="/datenschutz" className="text-white/70 hover:text-accent transition-colors">Datenschutz</Link></li>
               <li><Link href="/agb" className="text-white/70 hover:text-accent transition-colors">AGB</Link></li>
-              <li><Link href="/widerruf" className="text-white/70 hover:text-accent transition-colors">Widerrufsbelehrung</Link></li>
+              <li><Link href="/widerruf" className="text-white/70 hover:text-accent transition-colors">Widerruf</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/50">
+        <div className="border-t border-white/10 mt-8 pt-6 text-center text-xs text-white/40">
           <p>&copy; {currentYear} Lebenswendepunkt. Alle Rechte vorbehalten.</p>
-          <div className="mt-4 md:mt-0 flex gap-4">
-            {/* Social icons could go here if needed */}
-          </div>
         </div>
       </div>
     </footer>
