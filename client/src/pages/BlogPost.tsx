@@ -84,8 +84,8 @@ export default function BlogPost() {
               Ich bin gerne für Sie da.
             </p>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
-                Kostenloses Gespräch vereinbaren
+              <a href="mailto:lebenswendepunkt13@gmail.com">
+                Schreiben Sie mir Ihre Gedanken
               </a>
             </Button>
           </div>
