@@ -8,7 +8,7 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Angebote", href: "/#angebote" },
+    { name: "Angebote", href: "/angebote" },
     { name: "Workbooks", href: "/#workbook" },
     { name: "Blog", href: "/#blog" },
     { name: "Über mich", href: "/#ueber-mich" },
