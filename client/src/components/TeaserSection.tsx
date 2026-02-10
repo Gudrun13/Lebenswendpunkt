@@ -13,7 +13,7 @@ export function TeaserSection() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Hier können wir später Ihren Google Drive Link einfügen
-  const DOWNLOAD_LINK = "#"; 
+  const DOWNLOAD_LINK = "https://drive.google.com/file/d/15sCCVjJZOl9Sk6LKkzG3wb3LRkPHd-Rf/view?usp=drive_link"; 
 
   const handleFreebieSubmit = (e: React.FormEvent) => {
     e.preventDefault();
