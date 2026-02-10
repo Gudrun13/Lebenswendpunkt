@@ -45,6 +45,7 @@ export function TeaserSection() {
       title: "Über mich",
       description: "Wer begleitet Sie hier? Lernen Sie mich, meine Werte und meine Arbeitsweise kennen.",
       icon: User,
+      image: "/ueber-mich-image.png",
       href: "#ueber-mich",
       buttonText: "Mein Profil ansehen",
       color: "bg-slate-50"
