@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-primary text-white py-12 md:py-16 mt-auto">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Column 1: Brand */}
           <div className="space-y-4">
             <h3 className="text-2xl font-serif text-accent">Lebenswendepunkt</h3>
@@ -15,19 +15,8 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-bold uppercase tracking-wider text-accent/80">Navigation</h4>
-            <ul className="space-y-2">
-              <li><a href="/#angebote" className="text-white/70 hover:text-accent transition-colors">Angebote</a></li>
-              <li><a href="/#workbook" className="text-white/70 hover:text-accent transition-colors">Workbook</a></li>
-              <li><a href="/#blog" className="text-white/70 hover:text-accent transition-colors">Blog</a></li>
-              <li><a href="/#ueber-mich" className="text-white/70 hover:text-accent transition-colors">Über mich</a></li>
-            </ul>
-          </div>
-
-          {/* Column 3: Legal & Newsletter */}
-          <div className="space-y-4">
+          {/* Column 2: Legal & Newsletter */}
+          <div className="space-y-4 md:text-right">
             <h4 className="text-lg font-bold uppercase tracking-wider text-accent/80">Rechtliches</h4>
             <ul className="space-y-2">
               <li><Link href="/newsletter" className="text-white/70 hover:text-accent transition-colors">Newsletter Anmeldung</Link></li>
