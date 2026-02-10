@@ -21,7 +21,7 @@ export function Hero() {
               className="w-full h-auto object-cover rounded-xl shadow-2xl" 
             />
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-primary mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight">
             Manchmal passt einfach <br className="hidden md:block" /> vieles nicht mehr
           </h1>
           
