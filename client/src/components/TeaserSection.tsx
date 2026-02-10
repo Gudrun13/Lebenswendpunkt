@@ -18,6 +18,7 @@ export function TeaserSection() {
       title: "Angebote",
       description: "Maßgeschneiderte Lösungen für Ihre Situation. Finden Sie die Begleitung, die Sie jetzt brauchen.",
       icon: LayoutGrid,
+      image: "/angebote-image.png",
       href: "#angebote",
       buttonText: "Zu den Angeboten",
       color: "bg-white"
