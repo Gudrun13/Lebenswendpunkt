@@ -12,6 +12,9 @@ export function TeaserSection() {
   const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  // Hier können wir später Ihren Google Drive Link einfügen
+  const DOWNLOAD_LINK = "#"; 
+
   const handleFreebieSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
@@ -178,8 +181,8 @@ export function TeaserSection() {
               <p className="text-muted-foreground mb-4">
                 Wir haben Ihnen den Download-Link zusätzlich per E-Mail gesendet.
               </p>
-              <Button className="w-full font-bold" onClick={() => window.open('#', '_blank')}>
-                Download starten (PDF)
+              <Button className="w-full font-bold" onClick={() => window.open(DOWNLOAD_LINK, '_blank')}>
+                Download starten (Google Drive)
               </Button>
             </div>
           )}
