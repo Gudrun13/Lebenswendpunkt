@@ -12,18 +12,23 @@ import Imprint from "@/pages/Imprint";
 import Terms from "@/pages/Terms";
 import Revocation from "@/pages/Revocation";
 
+import { FirstAidBot } from "@/components/FirstAidBot";
+
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/angebote" component={Offers} />
-      <Route path="/newsletter" component={Newsletter} />
-      <Route path="/datenschutz" component={Privacy} />
-      <Route path="/impressum" component={Imprint} />
-      <Route path="/agb" component={Terms} />
-      <Route path="/widerruf" component={Revocation} />
-      <Route component={NotFound} />
-    </Switch>
+    <div className="relative min-h-screen">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/angebote" component={Offers} />
+        <Route path="/newsletter" component={Newsletter} />
+        <Route path="/datenschutz" component={Privacy} />
+        <Route path="/impressum" component={Imprint} />
+        <Route path="/agb" component={Terms} />
+        <Route path="/widerruf" component={Revocation} />
+        <Route component={NotFound} />
+      </Switch>
+      <FirstAidBot />
+    </div>
   );
 }
 
