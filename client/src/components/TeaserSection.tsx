@@ -1,16 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Gift, Heart, User, LayoutGrid } from "lucide-react";
+import { ArrowRight, BookOpen, Gift, User, LayoutGrid, CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 export function TeaserSection() {
+  const [showFreebieDialog, setShowFreebieDialog] = useState(false);
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleFreebieSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      setIsSubmitted(true);
+      // In a real app, this would trigger an email signup API call
+      // and then provide the file download
+    }
+  };
+
   const teasers = [
     {
       title: "Freebie",
       description: "Ein Geschenk für Sie. Holen Sie sich mein kostenloses Freebie für mehr Klarheit im Alltag.",
       icon: Gift,
       image: "/freebie-image.png",
-      href: "#freebie",
+      action: "modal", // Custom action type
       buttonText: "Jetzt herunterladen",
       color: "bg-blue-50" // Light blue background
     },
@@ -37,7 +54,7 @@ export function TeaserSection() {
       description: "Inspiration und Impulse. Lesen Sie meine Gedanken und Erfahrungen zu Lebenswendepunkte.",
       icon: BookOpen,
       image: "/blog-image.png",
-      href: "#blog",
+      href: "/#blog",
       buttonText: "Zum Blog",
       color: "bg-white"
     },
@@ -46,7 +63,7 @@ export function TeaserSection() {
       description: "Wer begleitet Sie hier? Lernen Sie mich, meine Werte und meine Arbeitsweise kennen.",
       icon: User,
       image: "/ueber-mich-image.jpg",
-      href: "#ueber-mich",
+      href: "/#ueber-mich",
       buttonText: "Mein Profil ansehen",
       color: "bg-slate-50"
     }
@@ -100,12 +117,19 @@ export function TeaserSection() {
                   "flex",
                   index % 2 === 1 ? "justify-center md:justify-end" : "justify-center md:justify-start"
                 )}>
-                  <Button size="lg" className="group font-bold" asChild>
-                    <a href={teaser.href}>
+                  {teaser.action === "modal" ? (
+                    <Button size="lg" className="group font-bold" onClick={() => setShowFreebieDialog(true)}>
                       {teaser.buttonText}
                       <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
-                    </a>
-                  </Button>
+                    </Button>
+                  ) : (
+                    <Button size="lg" className="group font-bold" asChild>
+                      <a href={teaser.href}>
+                        {teaser.buttonText}
+                        <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
 
@@ -113,6 +137,54 @@ export function TeaserSection() {
           </motion.div>
         ))}
       </div>
+
+      <Dialog open={showFreebieDialog} onOpenChange={setShowFreebieDialog}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="font-serif text-2xl text-primary">
+              {isSubmitted ? "Vielen Dank!" : "Freebie herunterladen"}
+            </DialogTitle>
+            <DialogDescription>
+              {isSubmitted 
+                ? "Ihr Freebie steht nun zum Download bereit." 
+                : "Bitte geben Sie Ihre E-Mail-Adresse ein, um das kostenlose Workbook zu erhalten."}
+            </DialogDescription>
+          </DialogHeader>
+          
+          {!isSubmitted ? (
+            <form onSubmit={handleFreebieSubmit} className="space-y-4 py-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">E-Mail-Adresse</Label>
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="name@beispiel.de" 
+                  required 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              <DialogFooter>
+                <Button type="submit" className="w-full font-bold">
+                  Jetzt kostenlos anfordern
+                </Button>
+              </DialogFooter>
+            </form>
+          ) : (
+            <div className="py-6 flex flex-col items-center gap-4 text-center">
+              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-2">
+                <CheckCircle className="h-8 w-8" />
+              </div>
+              <p className="text-muted-foreground mb-4">
+                Wir haben Ihnen den Download-Link zusätzlich per E-Mail gesendet.
+              </p>
+              <Button className="w-full font-bold" onClick={() => window.open('#', '_blank')}>
+                Download starten (PDF)
+              </Button>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
