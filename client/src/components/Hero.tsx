@@ -5,8 +5,8 @@ export function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center py-20 px-4 overflow-hidden">
       {/* Abstract Background Element */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-blue-900/20 blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-blue-900/5 blur-[100px] rounded-full pointer-events-none" />
 
       <div className="container mx-auto max-w-4xl relative z-10 text-center">
         <motion.div
@@ -28,7 +28,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="space-y-12 text-left bg-card/30 backdrop-blur-sm p-8 md:p-12 rounded-lg border border-white/5 shadow-xl"
+          className="space-y-12 text-left bg-card/50 backdrop-blur-sm p-8 md:p-12 rounded-lg border border-border shadow-xl"
         >
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-serif text-primary">
@@ -48,7 +48,7 @@ export function Hero() {
           </div>
 
           <div className="space-y-8">
-            <p className="text-xl font-serif text-white italic leading-relaxed">
+            <p className="text-xl font-serif text-foreground italic leading-relaxed">
               "Es geht darum, wieder handlungsfähig zu werden, in Deinem Leben, mit Deinen Möglichkeiten.
               Und ich weiß: Diese Möglichkeiten sind in Dir."
             </p>

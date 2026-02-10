@@ -37,42 +37,42 @@
   /* Deep Royal Blue: approx #001f5b -> hsl(220, 100%, 18%) */
   /* Gold: approx #c5a059 -> hsl(40, 48%, 56%) */
   
-  --background: 220 100% 12%; /* Very dark blue for main background */
-  --foreground: 40 20% 95%; /* Off-white for text */
+  --background: 40 20% 98%; /* Light off-white background */
+  --foreground: 220 100% 18%; /* Deep Royal Blue text */
 
-  --card: 220 90% 16%; /* Slightly lighter blue for cards */
-  --card-foreground: 40 20% 95%;
+  --card: 0 0% 100%; /* White for cards */
+  --card-foreground: 220 100% 18%;
 
-  --popover: 220 90% 16%;
-  --popover-foreground: 40 20% 95%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 100% 18%;
 
   --primary: 40 48% 56%; /* Gold for buttons/accents */
-  --primary-foreground: 220 100% 15%; /* Dark blue text on gold */
+  --primary-foreground: 220 100% 18%; /* Dark blue text on gold */
 
-  --secondary: 220 50% 25%; /* Muted blue for secondary elements */
-  --secondary-foreground: 40 20% 95%;
+  --secondary: 220 20% 90%; /* Light grey-blue for secondary elements */
+  --secondary-foreground: 220 100% 18%;
 
-  --muted: 220 40% 20%;
-  --muted-foreground: 220 20% 70%;
+  --muted: 220 10% 94%;
+  --muted-foreground: 220 30% 50%;
 
   --accent: 40 48% 56%;
-  --accent-foreground: 220 100% 15%;
+  --accent-foreground: 220 100% 18%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
 
-  --border: 220 50% 25%;
-  --input: 220 50% 25%;
+  --border: 220 20% 90%;
+  --input: 220 20% 90%;
   --ring: 40 48% 56%;
 
   --radius: 0.25rem;
 }
 
-/* Light mode override if needed, but we'll stick to the dark elegant theme by default for this brand */
-.light {
-  --background: 220 10% 98%; 
-  --foreground: 220 100% 15%;
-  /* ... adjustment would go here, but starting with dark elegance */
+/* Dark mode override (optional, but keeping the structure) */
+.dark {
+  --background: 220 100% 12%; 
+  --foreground: 40 20% 95%;
+  /* ... rest of dark mode if needed later */
 }
 
 @layer base {
