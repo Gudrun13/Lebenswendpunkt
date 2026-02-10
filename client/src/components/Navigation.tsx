@@ -22,7 +22,7 @@ export function Navigation() {
           <img 
             src="/logo-new.jpg" 
             alt="Lebenswendepunkt Logo" 
-            className="h-20 w-auto object-contain"
+            className="h-20 w-20 object-cover rounded-full"
           />
         </Link>
 
