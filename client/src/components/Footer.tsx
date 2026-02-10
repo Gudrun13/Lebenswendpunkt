@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="bg-primary text-white py-12 md:py-16 mt-auto">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 md:px-6 max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
           {/* Column 1: Brand */}
           <div className="space-y-4">
