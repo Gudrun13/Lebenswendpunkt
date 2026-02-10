@@ -82,10 +82,10 @@ export default function Offers() {
                     )}
 
                     <div className="pt-2">
-                      <Button className="bg-foreground text-primary hover:bg-foreground/90 font-serif px-8 py-6 h-auto text-lg" asChild>
+                      <Button className="bg-foreground text-primary hover:bg-foreground/90 font-serif px-6" asChild>
                         <a href={CONSULTATION_LINK} target="_blank" rel="noopener noreferrer">
                           Kostenloses Erstgespräch
-                          <ArrowRight className="ml-2 h-5 w-5" />
+                          <ArrowRight className="ml-2 h-4 w-4" />
                         </a>
                       </Button>
                     </div>
@@ -106,7 +106,7 @@ export default function Offers() {
              <p className="text-xl text-white/90 mb-10 leading-relaxed">
                Lassen Sie uns einfach sprechen. Im kostenlosen Erstgespräch finden wir heraus, wie ich Sie am besten unterstützen kann.
              </p>
-             <Button className="bg-white text-primary hover:bg-white/90 font-serif px-8 py-6 h-auto text-lg font-bold" asChild>
+             <Button className="bg-white text-primary hover:bg-white/90 font-serif px-6 font-bold" size="lg" asChild>
                 <a href={CONSULTATION_LINK} target="_blank" rel="noopener noreferrer">
                   Termin vereinbaren
                 </a>
