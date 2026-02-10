@@ -33,8 +33,9 @@ export function TeaserSection() {
     },
     {
       title: "Blog",
-      description: "Inspiration und Impulse. Lesen Sie meine Gedanken und Erfahrungen zu Lebenswendepunkten.",
+      description: "Inspiration und Impulse. Lesen Sie meine Gedanken und Erfahrungen zu Lebenswendepunkte.",
       icon: BookOpen,
+      image: "/blog-image.png",
       href: "#blog",
       buttonText: "Zum Blog",
       color: "bg-white"
