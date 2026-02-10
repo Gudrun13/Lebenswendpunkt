@@ -74,7 +74,7 @@ export function TeaserSection() {
                    <img 
                     src={teaser.image} 
                     alt={teaser.title}
-                    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
+                    className="w-full h-full object-cover rounded-full shadow-lg"
                   />
                 ) : (
                   <div className="w-24 h-24 rounded-full flex items-center justify-center bg-primary/10 text-primary">
