@@ -20,7 +20,7 @@ export function Navigation() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <img 
-            src="/attached_assets/logo_für_markenanmeldung_1770716319414.jpg" 
+            src="/logo-new.jpg" 
             alt="Lebenswendepunkt Logo" 
             className="h-20 w-auto object-contain"
           />
