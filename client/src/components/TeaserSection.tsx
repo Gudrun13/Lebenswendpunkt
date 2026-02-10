@@ -9,6 +9,7 @@ export function TeaserSection() {
       title: "Freebie",
       description: "Ein Geschenk für Sie. Holen Sie sich mein kostenloses Freebie für mehr Klarheit im Alltag.",
       icon: Gift,
+      image: "/freebie-image.png",
       href: "#freebie",
       buttonText: "Jetzt herunterladen",
       color: "bg-blue-50" // Light blue background
@@ -66,10 +67,20 @@ export function TeaserSection() {
               
               {/* Icon / Visual Side */}
               <div className={cn(
-                "flex-shrink-0 w-24 h-24 rounded-full flex items-center justify-center bg-primary/10 text-primary",
+                "flex-shrink-0 w-32 h-32 md:w-40 md:h-40 flex items-center justify-center",
                 index % 2 === 1 ? "md:order-2" : "md:order-1"
               )}>
-                <teaser.icon className="h-10 w-10" />
+                {teaser.image ? (
+                   <img 
+                    src={teaser.image} 
+                    alt={teaser.title}
+                    className="w-full h-full object-cover rounded-full shadow-lg border-4 border-white"
+                  />
+                ) : (
+                  <div className="w-24 h-24 rounded-full flex items-center justify-center bg-primary/10 text-primary">
+                    <teaser.icon className="h-10 w-10" />
+                  </div>
+                )}
               </div>
 
               {/* Text Side */}
