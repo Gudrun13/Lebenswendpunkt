@@ -1,83 +1,102 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, BookOpen, Gift, Heart, User, LayoutGrid } from "lucide-react";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export function TeaserSection() {
   const teasers = [
     {
       title: "Freebie",
-      description: "Holen Sie sich mein kostenloses Freebie für mehr Klarheit im Alltag.",
+      description: "Ein Geschenk für Sie. Holen Sie sich mein kostenloses Freebie für mehr Klarheit im Alltag.",
       icon: Gift,
       href: "#freebie",
-      buttonText: "Zum Freebie"
+      buttonText: "Jetzt herunterladen",
+      color: "bg-blue-50" // Light blue background
     },
     {
       title: "Angebote",
-      description: "Individuelle Begleitung und Coaching-Pakete für Ihre Situation.",
+      description: "Maßgeschneiderte Lösungen für Ihre Situation. Finden Sie die Begleitung, die Sie jetzt brauchen.",
       icon: LayoutGrid,
       href: "#angebote",
-      buttonText: "Angebote ansehen"
+      buttonText: "Zu den Angeboten",
+      color: "bg-white"
     },
     {
       title: "Workbook",
-      description: "Das Arbeitsbuch für Ihre persönliche Weiterentwicklung und Reflexion.",
+      description: "Ihr persönliches Arbeitsbuch. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
       icon: BookOpen,
       href: "#workbook",
-      buttonText: "Zum Workbook"
+      buttonText: "Workbook entdecken",
+      color: "bg-amber-50" // Light gold/amber background matching brand
     },
     {
       title: "Blog",
-      description: "Impulse, Gedanken und Erfahrungen rund um Lebenswendepunkte.",
+      description: "Inspiration und Impulse. Lesen Sie meine Gedanken und Erfahrungen zu Lebenswendepunkten.",
       icon: BookOpen,
       href: "#blog",
-      buttonText: "Zum Blog"
+      buttonText: "Zum Blog",
+      color: "bg-white"
     },
     {
       title: "Über mich",
-      description: "Lernen Sie mich und meine Arbeitsweise besser kennen.",
+      description: "Wer begleitet Sie hier? Lernen Sie mich, meine Werte und meine Arbeitsweise kennen.",
       icon: User,
       href: "#ueber-mich",
-      buttonText: "Mehr über mich"
+      buttonText: "Mein Profil ansehen",
+      color: "bg-slate-50"
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-secondary/20">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {teasers.map((teaser, index) => (
-            <motion.div
-              key={teaser.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Card className="h-full flex flex-col border-none shadow-md hover:shadow-xl transition-shadow duration-300">
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
-                    <teaser.icon className="h-6 w-6" />
-                  </div>
-                  <CardTitle className="text-2xl font-serif text-primary">{teaser.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-foreground/80 leading-relaxed">
-                    {teaser.description}
-                  </p>
-                </CardContent>
-                <CardFooter>
-                  <Button variant="outline" className="w-full group border-primary/20 hover:border-primary text-primary hover:bg-primary/5" asChild>
-                    <a href={teaser.href} className="flex items-center justify-between">
+    <section className="py-0">
+      <div className="flex flex-col">
+        {teasers.map((teaser, index) => (
+          <motion.div
+            key={teaser.title}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            viewport={{ once: true, margin: "-100px" }}
+            className={cn(
+              "py-20 px-4 md:px-8 flex justify-center",
+              teaser.color
+            )}
+          >
+            <div className="container max-w-4xl flex flex-col md:flex-row items-center gap-8 md:gap-16">
+              
+              {/* Icon / Visual Side */}
+              <div className={cn(
+                "flex-shrink-0 w-24 h-24 rounded-full flex items-center justify-center bg-primary/10 text-primary",
+                index % 2 === 1 ? "md:order-2" : "md:order-1"
+              )}>
+                <teaser.icon className="h-10 w-10" />
+              </div>
+
+              {/* Text Side */}
+              <div className={cn(
+                "text-center md:text-left flex-1",
+                index % 2 === 1 ? "md:order-1 md:text-right" : "md:order-2 md:text-left"
+              )}>
+                <h3 className="text-3xl font-serif text-primary mb-4">{teaser.title}</h3>
+                <p className="text-xl text-foreground/80 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0 ml-auto">
+                  {teaser.description}
+                </p>
+                <div className={cn(
+                  "flex",
+                  index % 2 === 1 ? "justify-center md:justify-end" : "justify-center md:justify-start"
+                )}>
+                  <Button size="lg" className="group font-bold" asChild>
+                    <a href={teaser.href}>
                       {teaser.buttonText}
-                      <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover:translate-x-1" />
+                      <ArrowRight className="h-5 w-5 ml-2 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>
-                </CardFooter>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+                </div>
+              </div>
+
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
