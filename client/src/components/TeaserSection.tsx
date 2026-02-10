@@ -44,12 +44,12 @@ export function TeaserSection() {
       color: "bg-white"
     },
     {
-      title: "Workbook",
-      description: "Ihr persönliches Arbeitsbuch. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
+      title: "Workbooks",
+      description: "Ihre persönlichen Arbeitsbücher. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
       icon: BookOpen,
       image: "/workbook-image.png",
       href: "#workbook",
-      buttonText: "Workbook entdecken",
+      buttonText: "Workbooks entdecken",
       color: "bg-amber-50" // Light gold/amber background matching brand
     },
     {
