@@ -21,7 +21,7 @@ export function Hero() {
               className="w-full h-auto object-cover rounded-xl shadow-2xl" 
             />
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
             Manchmal passt einfach <br className="hidden md:block" /> vieles nicht mehr
           </h1>
           
@@ -38,7 +38,7 @@ export function Hero() {
           className="space-y-12 text-left bg-card/50 backdrop-blur-sm p-8 md:p-12 rounded-lg border border-border shadow-xl"
         >
           <div className="space-y-6">
-            <h2 className="text-2xl md:text-3xl font-serif text-primary">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary">
               Genau dafür bin ich da:
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
@@ -55,13 +55,13 @@ export function Hero() {
           </div>
 
           <div className="space-y-8">
-            <p className="text-xl font-serif text-foreground italic leading-relaxed">
+            <p className="text-xl font-medium text-foreground italic leading-relaxed">
               "Es geht darum, wieder handlungsfähig zu werden, in Deinem Leben, mit Deinen Möglichkeiten.
               Und ich weiß: Diese Möglichkeiten sind in Dir."
             </p>
             
             <div className="pt-4 flex justify-center md:justify-start">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto font-serif">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto font-bold">
                 Kostenloses Erstgespräch vereinbaren
               </Button>
             </div>

@@ -29,7 +29,7 @@ export function Navigation() {
               {link.name}
             </a>
           ))}
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif px-6">
+          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-bold px-6">
             Erstgespräch
           </Button>
         </nav>
@@ -54,7 +54,7 @@ export function Navigation() {
                   {link.name}
                 </a>
               ))}
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-serif">
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-bold">
                 Erstgespräch
               </Button>
             </nav>
