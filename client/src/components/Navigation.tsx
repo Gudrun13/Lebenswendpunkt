@@ -29,7 +29,7 @@ export function Navigation() {
               {link.name}
             </a>
           ))}
-          <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif px-6" asChild>
+          <Button className="bg-foreground text-primary hover:bg-foreground/90 font-serif px-6" asChild>
             <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
               Erstgespräch
             </a>
@@ -56,7 +56,7 @@ export function Navigation() {
                   {link.name}
                 </a>
               ))}
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 w-full font-serif" asChild>
+              <Button className="bg-foreground text-primary hover:bg-foreground/90 w-full font-serif" asChild>
                 <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
                   Erstgespräch
                 </a>

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center py-20 px-4 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center pt-20 pb-40 px-4 overflow-hidden">
       {/* Abstract Background Element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-primary/10 blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-blue-900/5 blur-[100px] rounded-full pointer-events-none" />
