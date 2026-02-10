@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Heart, Briefcase, Activity, CloudRain, ArrowRight } from "lucide-react";
+import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } from "lucide-react";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -26,6 +26,13 @@ export default function Offers() {
       description: "Wenn Angst den Alltag bestimmt, wird das Leben eng. Wir schauen uns die Ursachen an und ich vermittle Ihnen konkrete Werkzeuge, um in akuten Situationen wieder Ruhe zu finden und langfristig das Vertrauen in sich selbst zurückzugewinnen.",
       icon: CloudRain,
       color: "bg-white"
+    },
+    {
+      title: "Paarberatung: Gemeinsam in die Zukunft",
+      description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich unterstütze Sie als Paar dabei, eine stabile Basis für Ihre gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
+      details: ["Heirat & Ehevorbereitung", "Zusammenziehen", "Gemeinsame Ziele"],
+      icon: HeartHandshake,
+      color: "bg-blue-50"
     }
   ];
 
