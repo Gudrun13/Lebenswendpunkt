@@ -27,6 +27,7 @@ export function TeaserSection() {
       title: "Workbook",
       description: "Ihr persönliches Arbeitsbuch. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
       icon: BookOpen,
+      image: "/workbook-image.png",
       href: "#workbook",
       buttonText: "Workbook entdecken",
       color: "bg-amber-50" // Light gold/amber background matching brand
