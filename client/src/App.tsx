@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import Offers from "@/pages/Offers";
+import Workbooks from "@/pages/Workbooks";
+import WorkbookDetail from "@/pages/WorkbookDetail";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Newsletter from "@/pages/Newsletter";
@@ -22,6 +24,8 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/angebote" component={Offers} />
+        <Route path="/workbooks" component={Workbooks} />
+        <Route path="/workbooks/:slug" component={WorkbookDetail} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/newsletter" component={Newsletter} />

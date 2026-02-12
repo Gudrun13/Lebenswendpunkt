@@ -49,7 +49,7 @@ export function TeaserSection() {
       description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
       icon: BookOpen,
       image: "/workbook-image.png",
-      href: "#workbook",
+      href: "/workbooks",
       buttonText: "Workbooks entdecken",
       color: "bg-amber-50" // Light gold/amber background matching brand
     },
