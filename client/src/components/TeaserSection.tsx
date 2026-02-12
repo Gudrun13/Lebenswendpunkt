@@ -27,7 +27,8 @@ export function TeaserSection() {
   const teasers = [
     {
       title: "Freebie",
-      description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
+      description: "20 Stärkungstools, die Dich stärken und sortieren helfen.",
+      eyebrow: "Für Dich zusammengestellt.",
       icon: Gift,
       image: "/freebie-image.png",
       action: "modal", // Custom action type
@@ -45,7 +46,7 @@ export function TeaserSection() {
     },
     {
       title: "Workbooks",
-      description: "Für Dich zusammengestellt. Workbooks die Dich stärken und sortieren helfen.",
+      description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
       icon: BookOpen,
       image: "/workbook-image.png",
       href: "#workbook",
@@ -112,6 +113,11 @@ export function TeaserSection() {
                 "text-center md:text-left flex-1",
                 index % 2 === 1 ? "md:order-1 md:text-right" : "md:order-2 md:text-left"
               )}>
+                {teaser.eyebrow && (
+                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary/70 mb-3">
+                    {teaser.eyebrow}
+                  </p>
+                )}
                 <h3 className="text-3xl font-serif text-primary mb-4">{teaser.title}</h3>
                 <p className="text-xl text-foreground/80 leading-relaxed mb-8 max-w-xl mx-auto md:mx-0 ml-auto">
                   {teaser.description}
