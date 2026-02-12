@@ -11,9 +11,9 @@ export default function About() {
     {
       title: "Manchmal gerät das Leben aus der Spur.",
       paragraphs: [
-        "Ein Bruch. Eine Entscheidung. Eine leise oder sehr laute Krise.",
+        "Ein Bruch, eine Entscheidung oder eine Krise.",
         "Und plötzlich stehst Du da und weißt nicht genau, wie es weitergehen soll.",
-        "In solchen Momenten begleite ich Menschen.",
+        "Durch diese Zeiten begleite ich Dich.",
       ],
     },
     {
@@ -27,46 +27,56 @@ export default function About() {
       title: "Mein eigener Weg war nicht geradlinig.",
       paragraphs: [
         "Mit 36 Jahren habe ich noch einmal neu begonnen und eine Ausbildung zur Kinderkrankenschwester gemacht.",
-        "Davor und danach habe ich in sehr unterschiedlichen Bereichen gearbeitet: im Kinderheim, mit suchtkranken Jugendlichen und Erwachsenen, im Justizvollzug und in der Rehabilitation von Menschen mit schweren Verletzungen. Oft auch in leitender Verantwortung.",
-        "Besonders prägend war meine Zeit in der Soziotherapie. Über mehrere Jahre habe ich drogenabhängige Erwachsene begleitet und eine Einrichtung mit aufgebaut.",
-        "Dort habe ich erlebt, wie tief Veränderung gehen kann, wenn echte Verbindung entsteht. Wenn ein Mensch sich gesehen fühlt. Und ernst genommen.",
+        "Davor und danach habe ich in sehr unterschiedlichen Bereichen gearbeitet: im Kinderheim, mit suchtkranken Jugendlichen und Erwachsenen, im Justizvollzug und in der Rehabilitation von Menschen mit schweren Hirnverletzungen. Oft auch in leitender Verantwortung.",
+      ],
+    },
+    {
+      title: "Soziotherapie",
+      paragraphs: [
+        "Besonders prägend war meine Zeit in der Soziotherapie. Über mehrere Jahre habe ich drogenabhängige Erwachsene begleitet.",
+        "Dort habe ich erlebt, wie tief Veränderung gehen kann, wenn echte Verbindung entsteht. Wenn ein Mensch sich wahrgenommen und gesehen fühlt.",
       ],
     },
     {
       title: "Heute arbeite ich in meiner eigenen Praxis.",
       paragraphs: [
         "Ganzheitlich und zugleich bodenständig.",
-        "Ich verbinde Klarheit mit Mitgefühl. Humor mit Ernsthaftigkeit. Struktur mit Achtsamkeit. In meinen Gesprächen geht es darum, Gedanken zu ordnen, Gefühle zu verstehen und wieder handlungsfähig zu werden.",
+        "Ich verbinde Klarheit mit Mitgefühl, Humor mit Ernsthaftigkeit, Struktur mit Achtsamkeit. In meinen Gesprächen geht es darum, Gedanken zu ordnen, Gefühle zu verstehen und wieder handlungsfähig zu werden.",
       ],
     },
     {
-      title: "Methoden & Haltung",
+      title: "Therapeutische Ansätze",
       paragraphs: [
         "Ich arbeite mit bewährten therapeutischen Ansätzen, die helfen, innere Blockaden zu lösen und neue Handlungsspielräume zu öffnen.",
         "Dazu gehören unter anderem PEP nach Dr. Michael Bohne, systemische Trauerarbeit und weitere Methoden, die Körper und Verstand gleichermaßen einbeziehen.",
+      ],
+    },
+    {
+      title: "Was bei mir Platz hat",
+      paragraphs: [
         "Meditation, Körperwahrnehmung und kreative Impulse haben ebenso ihren Platz wie klare Analysen und lösungsorientierte Schritte.",
-        "Jeder Mensch bringt seine eigene Geschichte mit. Und seine eigene Kraft.",
+        "Jeder Mensch bringt seine eigene Geschichte mit und seine eigene Kraft.",
       ],
     },
     {
       title: "Weiterbildung",
       paragraphs: [
-        "Ich bilde mich kontinuierlich weiter. In Familienberatung, Krisenintervention, Entspannungstherapie, Meditationslehre und aktuell auch im Bereich künstliche Intelligenz.",
+        "Ich bilde mich kontinuierlich weiter. In Familienberatung, Krisenintervention und aktuell auch im Bereich künstliche Intelligenz.",
       ],
     },
     {
       title: "Mein KI-gestützter Begleiter",
       paragraphs: [
-        "Ein Teil dieser Entwicklung ist mein KI-gestützter Begleiter. Ein einfühlsamer Gesprächsbot, den ich für Menschen in Umbruchphasen entwickelt habe.",
+        "Ein Teil dieser Entwicklung ist mein KI-gestützter Begleiter. Ein Gesprächsbot, den ich für Menschen in Umbruchphasen entwickelt habe.",
         "Wenn Du zunächst anonym und in Deinem eigenen Tempo erste Impulse sammeln möchtest, kannst Du ihn gern ausprobieren. Kostenfrei und jederzeit erreichbar.",
       ],
     },
     {
       title: "Was mir wichtig ist",
       paragraphs: [
-        "Dir einen Raum zu geben, in dem Du Dich sicher fühlst.",
-        "In dem Du Dich sortieren kannst.",
-        "In dem Selbstbestimmung wächst und Deine eigene Wirksamkeit wieder spürbar wird.",
+        "Mir ist wichtig, dass Du Dich bei mir sicher fühlst.",
+        "Dass Du sagen kannst, was Dich bewegt.",
+        "Dass Du Klarheit findest und wieder Vertrauen in Deine eigene Kraft gewinnst.",
       ],
     },
   ];
