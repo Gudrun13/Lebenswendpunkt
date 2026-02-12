@@ -60,12 +60,27 @@ export function Hero() {
               Und ich weiß: Diese Möglichkeiten sind in Dir."
             </p>
             
-            <div className="pt-4 flex justify-center md:justify-start">
+            <div className="pt-4 flex flex-col items-center md:items-start gap-6">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6 h-auto font-serif" asChild>
                 <a href="https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach" target="_blank" rel="noopener noreferrer">
                   Kostenloses Erstgespräch vereinbaren
                 </a>
               </Button>
+
+              <div className="max-w-2xl text-foreground/80 leading-relaxed space-y-4">
+                <p>
+                  Ich bin nicht nur eine Fachfrau für Krisenbewältigung, ich bin auch selbst durch einige Stürme des Lebens gegangen.
+                </p>
+                <p>
+                  Meine eigenen Erfahrungen mit Trauer, Burnout und Mobbing haben mir gezeigt, wie wichtig es ist, Schritt für Schritt das eigene Leben so zu gestalten, das ich Ja dazu sagen kann.
+                </p>
+                <p>
+                  Mit meiner Liebe zu den Menschen, meinem Verständnis für die menschliche Seele und einer klaren, lösungsorientierten Haltung biete ich Dir einen sicheren Raum, um Deine eigenen Herausforderungen zu meistern.
+                </p>
+                <p>
+                  Gemeinsam entwickeln wir Tools, die Dich stärken und Dir wieder zu mehr Klarheit, innerer Kraft und Selbstwirksamkeit verhelfen.
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
