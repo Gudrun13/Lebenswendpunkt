@@ -110,7 +110,7 @@ export default function About() {
                 <div className="space-y-12">
                   {sections.map((s, idx) => (
                     <section key={idx} className="space-y-4">
-                      <h2 className="text-2xl md:text-3xl font-serif text-primary" data-testid={`text-about-section-title-${idx}`}>
+                      <h2 className="text-2xl font-serif text-primary" data-testid={`text-about-section-title-${idx}`}>
                         {s.title}
                       </h2>
                       <div className="space-y-4 text-foreground/80 leading-relaxed">
@@ -124,7 +124,7 @@ export default function About() {
                   ))}
 
                   <section className="pt-8 border-t border-primary/10 text-center">
-                    <h3 className="text-2xl md:text-3xl font-serif text-primary mb-4" data-testid="text-about-cta-title">
+                    <h3 className="text-2xl font-serif text-primary mb-4" data-testid="text-about-cta-title">
                       Wenn Du merkst, dass es Zeit ist, etwas zu klären
                     </h3>
                     <p className="text-foreground/80 leading-relaxed mb-8 max-w-xl mx-auto" data-testid="text-about-cta-description">
