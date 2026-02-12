@@ -27,7 +27,7 @@ export function TeaserSection() {
   const teasers = [
     {
       title: "Freebie",
-      description: "Ein Geschenk für Sie. Holen Sie sich mein kostenloses Freebie für mehr Klarheit im Alltag.",
+      description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
       icon: Gift,
       image: "/freebie-image.png",
       action: "modal", // Custom action type
@@ -45,7 +45,7 @@ export function TeaserSection() {
     },
     {
       title: "Workbooks",
-      description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
+      description: "Ihre persönlichen Arbeitsbücher. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
       icon: BookOpen,
       image: "/workbook-image.png",
       href: "#workbook",
