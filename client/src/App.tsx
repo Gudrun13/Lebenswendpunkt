@@ -10,6 +10,7 @@ import Workbooks from "@/pages/Workbooks";
 import WorkbookDetail from "@/pages/WorkbookDetail";
 import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
+import About from "@/pages/About";
 import Newsletter from "@/pages/Newsletter";
 import Privacy from "@/pages/Privacy";
 import Imprint from "@/pages/Imprint";
@@ -28,6 +29,7 @@ function Router() {
         <Route path="/workbooks/:slug" component={WorkbookDetail} />
         <Route path="/blog" component={Blog} />
         <Route path="/blog/:slug" component={BlogPost} />
+        <Route path="/ueber-mich" component={About} />
         <Route path="/newsletter" component={Newsletter} />
         <Route path="/datenschutz" component={Privacy} />
         <Route path="/impressum" component={Imprint} />

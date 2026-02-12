@@ -11,7 +11,7 @@ export function Navigation() {
     { name: "Angebote", href: "/angebote" },
     { name: "Workbooks", href: "/workbooks" },
     { name: "Blog", href: "/blog" },
-    { name: "Über mich", href: "/#ueber-mich" },
+    { name: "Über mich", href: "/ueber-mich" },
   ];
 
   return (
