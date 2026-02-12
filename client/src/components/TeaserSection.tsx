@@ -36,7 +36,7 @@ export function TeaserSection() {
     },
     {
       title: "Angebote",
-      description: "Maßgeschneiderte Lösungen für Ihre Situation. Finden Sie die Begleitung, die Sie jetzt brauchen.",
+      description: "Schau, welche Form der Begleitung Dich jetzt stärkt.",
       icon: LayoutGrid,
       image: "/angebote-image.png",
       href: "/angebote",
