@@ -45,7 +45,7 @@ export function TeaserSection() {
     },
     {
       title: "Workbooks",
-      description: "Ihre persönlichen Arbeitsbücher. Nehmen Sie sich Zeit für sich selbst und Ihre Entwicklung.",
+      description: "Für Dich zusammengestellt. Workbooks die Dich stärken und sortieren helfen.",
       icon: BookOpen,
       image: "/workbook-image.png",
       href: "#workbook",
