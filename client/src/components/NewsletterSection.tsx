@@ -34,11 +34,12 @@ export function NewsletterSection() {
           </div>
 
           <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">
-            Impulse für Ihren Weg
+            Bleib mit mir in Verbindung
           </h2>
           <p className="text-xl text-foreground/80 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Melden Sie sich für meinen Newsletter an und erhalten Sie regelmäßig Gedanken, 
-            Inspirationen und Neuigkeiten rund um das Thema Lebenswendepunkte.
+            Melde Dich gerne hier für den Newsletter an.<br />
+            Du wirst etwa einmal im Monat einen Newsletter erhalten.<br />
+            Ich freue mich!
           </p>
 
           {!isSubmitted ? (
