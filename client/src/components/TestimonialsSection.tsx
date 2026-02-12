@@ -9,6 +9,14 @@ export function TestimonialsSection() {
     {
       text: "Ich hätte nie gedacht, dass ich da wieder rauskomme. Die Begleitung von Frau Murina hat mir geholfen, mein Leben neu zu sortieren. Es war wie ein Aufatmen nach langer Schwere.",
       author: "Waltraut K."
+    },
+    {
+      text: "Ich hätte nicht gedacht, dass man mit so viel Wärme auch Klartext reden kann. Das war für mich heilsam und stärkend zugleich.",
+      author: "S.T"
+    },
+    {
+      text: "Gudrun hat mir nicht gesagt, was ich tun soll, sie hat mir geholfen, es selbst zu erkennen. Ihre Ruhe und ihr Vertrauen haben mich sehr gestärkt.",
+      author: "Ronald F."
     }
   ];
 
