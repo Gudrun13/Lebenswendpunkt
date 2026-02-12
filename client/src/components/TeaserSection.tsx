@@ -63,7 +63,7 @@ export function TeaserSection() {
     },
     {
       title: "Über mich",
-      description: "Wer begleitet Sie hier? Lernen Sie mich, meine Werte und meine Arbeitsweise kennen.",
+      description: "Wer begleitet Dich hier? Ich arbeite dann, wenn es schwierig ist. Mit Ruhe. Mit Klarheit. Mit Haltung.",
       icon: User,
       image: "/ueber-mich-image.jpg",
       href: "/#ueber-mich",
