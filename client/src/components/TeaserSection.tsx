@@ -46,7 +46,7 @@ export function TeaserSection() {
     },
     {
       title: "Workbooks",
-      description: "20 Stärkungstools. Impulse, die Dich an Deine eigene Kraft erinnern.",
+      description: "Für Dich zusammengestellt. Workbooks die Dich stärken und sortieren helfen.",
       icon: BookOpen,
       image: "/workbook-image.png",
       href: "/workbooks",
