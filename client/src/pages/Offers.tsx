@@ -10,26 +10,26 @@ export default function Offers() {
   const offers = [
     {
       title: "Begleitung in Zeiten der Trauer",
-      description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Sie durch die Phasen der Trauer, gebe Ihnen Raum für alle Gefühle und unterstütze Sie dabei, langsam wieder Tritt zu fassen.",
+      description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Dich durch die Phasen der Trauer, gebe Dir Raum für alle Gefühle und unterstütze Dich dabei, langsam wieder Tritt zu fassen.",
       icon: Heart,
       color: "bg-blue-50"
     },
     {
       title: "Lebenskrisen & Umbrüche",
-      description: "Ob Trennung, schwere Erkrankung oder Arbeitsplatzverlust – solche Ereignisse ziehen uns oft den Boden unter den Füßen weg. Gemeinsam sortieren wir das Chaos, aktivieren Ihre Ressourcen und entwickeln Perspektiven für den neuen Lebensabschnitt.",
+      description: "Ob Trennung, schwere Erkrankung oder Arbeitsplatzverlust – solche Ereignisse ziehen uns oft den Boden unter den Füßen weg. Gemeinsam sortieren wir das Chaos, aktivieren Deine Ressourcen und entwickeln Perspektiven für den neuen Lebensabschnitt.",
       details: ["Trennung & Scheidung", "Schwere Erkrankung", "Arbeitsplatzverlust"],
       icon: Activity,
       color: "bg-amber-50"
     },
     {
       title: "Panik und Angst",
-      description: "Wenn Angst den Alltag bestimmt, wird das Leben eng. Wir schauen uns die Ursachen an und ich vermittle Ihnen konkrete Werkzeuge, um in akuten Situationen wieder Ruhe zu finden und langfristig das Vertrauen in sich selbst zurückzugewinnen.",
+      description: "Wenn Angst den Alltag bestimmt, wird das Leben eng. Wir schauen uns die Ursachen an und ich vermittle Dir konkrete Werkzeuge, um in akuten Situationen wieder Ruhe zu finden und langfristig das Vertrauen in Dich selbst zurückzugewinnen.",
       icon: CloudRain,
       color: "bg-white"
     },
     {
       title: "Paarberatung: Gemeinsam in die Zukunft",
-      description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich unterstütze Sie als Paar dabei, eine stabile Basis für Ihre gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
+      description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich unterstütze Euch als Paar dabei, eine stabile Basis für Eure gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
       details: ["Heirat & Ehevorbereitung", "Zusammenziehen", "Gemeinsame Ziele"],
       icon: HeartHandshake,
       color: "bg-blue-50"
@@ -52,7 +52,7 @@ export default function Offers() {
               Meine Angebote
             </h1>
             <p className="text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
-              Jeder Weg ist einzigartig. Hier finden Sie den passenden Rahmen für Ihr Anliegen.
+              Jeder Weg ist einzigartig. Hier findest Du alles, was ich anbiete.
             </p>
           </motion.div>
         </section>
@@ -111,7 +111,7 @@ export default function Offers() {
                Nicht sicher, was das Richtige ist?
              </h2>
              <p className="text-xl text-white/90 mb-10 leading-relaxed">
-               Lassen Sie uns einfach sprechen. Im kostenlosen Erstgespräch finden wir heraus, wie ich Sie am besten unterstützen kann.
+               Lass uns einfach sprechen. Im kostenlosen Erstgespräch finden wir heraus, wie ich Dich am besten unterstützen kann.
              </p>
              <Button className="bg-white text-primary hover:bg-white/90 font-serif px-6 font-bold" size="lg" asChild>
                 <a href={CONSULTATION_LINK} target="_blank" rel="noopener noreferrer">
