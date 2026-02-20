@@ -25,7 +25,7 @@ export default function Offers() {
     },
     {
       title: "Panik und Angst",
-      description: "Wenn Angst den Alltag bestimmt, wird das Leben eng. Wir schauen uns die Ursachen an und ich vermittle Dir konkrete Werkzeuge, um in akuten Situationen wieder Ruhe zu finden und langfristig das Vertrauen in Dich selbst zurückzugewinnen.",
+      description: "Angst schränkt den Alltag ein. Wir schauen uns an, wie die Angst wirkt. Ich begleite Dich dabei, in akuten Situationen mit der Angst umzugehen. Du lernst, wie Du Dir selbst hilfst und Dich wieder sicher im Alltag bewegst. Das Ziel ist, dass Du Deinem Handeln wieder vertraust.",
       icon: CloudRain,
       color: "bg-white"
     },
