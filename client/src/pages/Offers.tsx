@@ -11,7 +11,7 @@ export default function Offers() {
   const offers = [
     {
       title: "Begleitung in Zeiten der Trauer",
-      description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Dich durch die Phasen der Trauer, gebe Dir Raum für alle Gefühle und unterstütze Dich dabei, langsam wieder Tritt zu fassen.",
+      description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Dich durch die Phasen der Trauer, gebe Dir Raum für alle Gefühle und begleite Dich dabei, langsam wieder Tritt zu fassen.",
       image: newImage,
       color: "bg-blue-50"
     },
