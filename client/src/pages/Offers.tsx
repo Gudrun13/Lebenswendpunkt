@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } from "lucide-react";
-import candleImage from "@assets/candle-3189325_640_1771592638689.jpg";
+import newImage from "@assets/Landingpage_1771592791707.jpg";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -12,7 +12,7 @@ export default function Offers() {
     {
       title: "Begleitung in Zeiten der Trauer",
       description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Dich durch die Phasen der Trauer, gebe Dir Raum für alle Gefühle und unterstütze Dich dabei, langsam wieder Tritt zu fassen.",
-      image: candleImage,
+      image: newImage,
       color: "bg-blue-50"
     },
     {
