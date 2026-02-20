@@ -1,3 +1,4 @@
+import React from "react";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -107,24 +108,28 @@ export default function About() {
             </motion.header>
 
             <div className="bg-white/70 backdrop-blur-sm border border-primary/10 rounded-2xl shadow-sm overflow-hidden">
-              <div className="w-full h-64 md:h-96 overflow-hidden">
-                <img src={aboutImage} alt="Gudrun Murina" className="w-full h-full object-cover" />
-              </div>
               <div className="p-8 md:p-12">
                 <div className="space-y-12">
                   {sections.map((s, idx) => (
-                    <section key={idx} className="space-y-4">
-                      <h2 className="text-2xl font-serif text-primary" data-testid={`text-about-section-title-${idx}`}>
-                        {s.title}
-                      </h2>
-                      <div className="space-y-4 text-foreground/80 leading-relaxed">
-                        {s.paragraphs.map((p, pi) => (
-                          <p key={pi} data-testid={`text-about-paragraph-${idx}-${pi}`}>
-                            {p}
-                          </p>
-                        ))}
-                      </div>
-                    </section>
+                    <React.Fragment key={idx}>
+                      <section className="space-y-4">
+                        <h2 className="text-2xl font-serif text-primary" data-testid={`text-about-section-title-${idx}`}>
+                          {s.title}
+                        </h2>
+                        <div className="space-y-4 text-foreground/80 leading-relaxed">
+                          {s.paragraphs.map((p, pi) => (
+                            <p key={pi} data-testid={`text-about-paragraph-${idx}-${pi}`}>
+                              {p}
+                            </p>
+                          ))}
+                        </div>
+                      </section>
+                      {idx === 1 && (
+                        <div className="w-full h-64 md:h-96 rounded-2xl overflow-hidden shadow-sm border border-primary/10 my-12">
+                          <img src={aboutImage} alt="Gudrun Murina" className="w-full h-full object-cover object-top" />
+                        </div>
+                      )}
+                    </React.Fragment>
                   ))}
 
                   <section className="pt-8 border-t border-primary/10 text-center">
