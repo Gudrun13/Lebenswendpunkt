@@ -62,38 +62,42 @@ export default function Offers() {
         </section>
 
         {/* Offer Sections */}
-        <section className="py-20 px-4 bg-background">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-              {offers.map((offer, index) => (
-                <div key={index} className={`flex flex-col rounded-3xl overflow-hidden shadow-sm border border-primary/10 ${offer.color}`}>
+        <div className="flex flex-col">
+          {offers.map((offer, index) => (
+            <section key={index} className={`py-20 px-4 ${offer.color}`}>
+              <div className="container mx-auto max-w-5xl">
+                <div className={`flex flex-col md:flex-row gap-10 md:gap-16 items-center ${
+                  index % 2 === 1 ? "md:flex-row-reverse" : ""
+                }`}>
                   
                   {/* Visual Area */}
-                  {offer.image && (
-                    <div className="w-full h-64 md:h-72 overflow-hidden bg-white relative">
-                      <img src={offer.image} alt={offer.title} className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
-                    </div>
-                  )}
+                  <div className="w-48 h-48 md:w-64 md:h-64 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden shadow-sm border-4 border-white/60 bg-white">
+                    {offer.image ? (
+                      <img src={offer.image} alt={offer.title} className="w-full h-full object-cover" />
+                    ) : (
+                      offer.icon && <offer.icon className="h-16 w-16 text-primary/40" />
+                    )}
+                  </div>
 
                   {/* Content */}
-                  <div className="p-8 md:p-10 flex-1 flex flex-col">
-                    <h2 className="text-2xl md:text-3xl font-serif text-primary mb-4">{offer.title}</h2>
-                    <p className="text-lg text-foreground/80 leading-relaxed mb-8 flex-1">
+                  <div className="flex-1 text-center md:text-left">
+                    <h2 className="text-3xl font-serif text-primary mb-6">{offer.title}</h2>
+                    <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                       {offer.description}
                     </p>
                     
                     {offer.details && (
-                      <ul className="flex flex-wrap gap-2 mb-8">
+                      <ul className="flex flex-wrap gap-3 justify-center md:justify-start mb-8">
                         {offer.details.map((detail, i) => (
-                          <li key={i} className="px-3 py-1.5 bg-white/60 border border-primary/10 rounded-md text-sm font-medium text-foreground/70">
+                          <li key={i} className="px-4 py-2 bg-white/50 border border-primary/10 rounded-full text-sm font-medium text-foreground/70">
                             {detail}
                           </li>
                         ))}
                       </ul>
                     )}
 
-                    <div className="mt-auto">
-                      <Button className="bg-foreground text-primary hover:bg-foreground/90 font-serif w-full" asChild>
+                    <div className="pt-2">
+                      <Button className="bg-foreground text-primary hover:bg-foreground/90 font-serif px-6" asChild>
                         <a href={CONSULTATION_LINK} target="_blank" rel="noopener noreferrer">
                           Kostenloses Erstgespräch
                           <ArrowRight className="ml-2 h-4 w-4" />
@@ -102,10 +106,10 @@ export default function Offers() {
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        </section>
+              </div>
+            </section>
+          ))}
+        </div>
 
         {/* Closing CTA */}
         <section className="py-24 px-4 bg-primary text-primary-foreground text-center relative overflow-hidden">
