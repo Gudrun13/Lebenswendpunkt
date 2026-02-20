@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } from "lucide-react";
+import candleImage from "@assets/candle-3189325_640_1771592638689.jpg";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -11,7 +12,7 @@ export default function Offers() {
     {
       title: "Begleitung in Zeiten der Trauer",
       description: "Trauer ist keine Krankheit, sondern eine gesunde Reaktion auf einen Verlust. Doch manchmal scheint der Schmerz überwältigend. Ich begleite Dich durch die Phasen der Trauer, gebe Dir Raum für alle Gefühle und unterstütze Dich dabei, langsam wieder Tritt zu fassen.",
-      icon: Heart,
+      image: candleImage,
       color: "bg-blue-50"
     },
     {
@@ -65,10 +66,14 @@ export default function Offers() {
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                   
                   {/* Icon/Visual Area */}
-                  <div className={`w-24 h-24 rounded-full flex items-center justify-center flex-shrink-0 ${
+                  <div className={`w-24 h-24 rounded-full flex items-center justify-center flex-shrink-0 overflow-hidden ${
                     index % 2 === 0 ? "bg-primary/10 text-primary" : "bg-white text-primary border border-primary/20"
                   }`}>
-                    <offer.icon className="h-10 w-10" />
+                    {offer.image ? (
+                      <img src={offer.image} alt={offer.title} className="w-full h-full object-cover" />
+                    ) : (
+                      offer.icon && <offer.icon className="h-10 w-10" />
+                    )}
                   </div>
 
                   {/* Content */}
