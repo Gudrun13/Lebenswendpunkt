@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } from "lucide-react";
 import newImage from "@assets/Landingpage_1771592791707.jpg";
+import flowerImage from "@assets/flower-887443_1920_1771593511241.jpg";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -19,7 +20,7 @@ export default function Offers() {
       title: "Lebenskrisen & Umbrüche",
       description: "Trennung, schwere Erkrankung oder der Verlust des Arbeitsplatzes verändern das Leben grundlegend. Die gewohnte Sicherheit bricht weg. Ich begleite Dich dabei, die Situation zu ordnen. Wir finden konkrete Wege, wie Du Deinen neuen Lebensabschnitt gestaltest.",
       details: ["Trennung & Scheidung", "Schwere Erkrankung", "Arbeitsplatzverlust"],
-      icon: Activity,
+      image: flowerImage,
       color: "bg-amber-50"
     },
     {
