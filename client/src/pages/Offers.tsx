@@ -6,6 +6,7 @@ import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } fro
 import newImage from "@assets/Landingpage_1771592791707.jpg";
 import flowerImage from "@assets/flower-887443_1920_1771593511241.jpg";
 import gedankenImage from "@assets/gedanken_1771594107477.png";
+import paarImage from "@assets/image_1771595032070.png";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -34,7 +35,7 @@ export default function Offers() {
       title: "Paarberatung: Gemeinsam in die Zukunft",
       description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich begleite Euch als Paar dabei, eine stabile Basis für Eure gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
       details: ["Heirat & Ehevorbereitung", "Zusammenziehen", "Gemeinsame Ziele"],
-      icon: HeartHandshake,
+      image: paarImage,
       color: "bg-blue-50"
     }
   ];
