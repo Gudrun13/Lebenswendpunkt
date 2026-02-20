@@ -17,7 +17,7 @@ export default function Offers() {
     },
     {
       title: "Lebenskrisen & Umbrüche",
-      description: "Ob Trennung, schwere Erkrankung oder Arbeitsplatzverlust – solche Ereignisse ziehen uns oft den Boden unter den Füßen weg. Gemeinsam sortieren wir das Chaos, aktivieren Deine Ressourcen und entwickeln Perspektiven für den neuen Lebensabschnitt.",
+      description: "Trennung, schwere Erkrankung oder der Verlust des Arbeitsplatzes verändern das Leben grundlegend. Die gewohnte Sicherheit bricht weg. Ich begleite Dich dabei, die Situation zu ordnen. Wir finden konkrete Wege, wie Du Deinen neuen Lebensabschnitt gestaltest.",
       details: ["Trennung & Scheidung", "Schwere Erkrankung", "Arbeitsplatzverlust"],
       icon: Activity,
       color: "bg-amber-50"
