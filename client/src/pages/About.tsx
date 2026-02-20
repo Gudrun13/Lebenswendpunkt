@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import aboutImage from "@assets/travel_AI_model_generations_(7_1771595857206.png";
 
 export default function About() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -106,6 +107,9 @@ export default function About() {
             </motion.header>
 
             <div className="bg-white/70 backdrop-blur-sm border border-primary/10 rounded-2xl shadow-sm overflow-hidden">
+              <div className="w-full h-64 md:h-96 overflow-hidden">
+                <img src={aboutImage} alt="Gudrun Murina" className="w-full h-full object-cover" />
+              </div>
               <div className="p-8 md:p-12">
                 <div className="space-y-12">
                   {sections.map((s, idx) => (
