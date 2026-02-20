@@ -32,7 +32,7 @@ export default function Offers() {
     },
     {
       title: "Paarberatung: Gemeinsam in die Zukunft",
-      description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich unterstütze Euch als Paar dabei, eine stabile Basis für Eure gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
+      description: "Heiraten oder Zusammenziehen sind große Schritte, die oft Fragen und Unsicherheiten mit sich bringen. Ich begleite Euch als Paar dabei, eine stabile Basis für Eure gemeinsame Zukunft zu schaffen, Erwartungen zu klären und gestärkt in den neuen Lebensabschnitt zu starten.",
       details: ["Heirat & Ehevorbereitung", "Zusammenziehen", "Gemeinsame Ziele"],
       icon: HeartHandshake,
       color: "bg-blue-50"
