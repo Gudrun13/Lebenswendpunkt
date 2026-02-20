@@ -8,6 +8,7 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
+    { name: "Startseite", href: "/" },
     { name: "Angebote", href: "/angebote" },
     { name: "Workbooks", href: "/workbooks" },
     { name: "Blog", href: "/blog" },
