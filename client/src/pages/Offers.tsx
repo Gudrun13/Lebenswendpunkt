@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Heart, Briefcase, Activity, CloudRain, ArrowRight, HeartHandshake } from "lucide-react";
 import newImage from "@assets/Landingpage_1771592791707.jpg";
 import flowerImage from "@assets/flower-887443_1920_1771593511241.jpg";
+import gedankenImage from "@assets/gedanken_1771594107477.png";
 
 export default function Offers() {
   const CONSULTATION_LINK = "https://tidycal.com/lebenswendepunkt/kostenfreies-info-gesprach";
@@ -26,7 +27,7 @@ export default function Offers() {
     {
       title: "Panik und Angst",
       description: "Angst schränkt den Alltag ein. Wir schauen uns an, wie die Angst wirkt. Ich begleite Dich dabei, in akuten Situationen mit der Angst umzugehen. Du lernst, wie Du Dir selbst hilfst und Dich wieder sicher im Alltag bewegst. Das Ziel ist, dass Du Deinem Handeln wieder vertraust.",
-      icon: CloudRain,
+      image: gedankenImage,
       color: "bg-white"
     },
     {
