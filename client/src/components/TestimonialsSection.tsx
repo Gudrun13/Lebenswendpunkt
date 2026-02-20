@@ -25,7 +25,7 @@ export function TestimonialsSection() {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">
-            Das sagen meine Kunden
+            Feedback von Klienten und Klientinnen
           </h2>
           <div className="w-24 h-1 bg-primary/20 mx-auto rounded-full" />
         </div>
