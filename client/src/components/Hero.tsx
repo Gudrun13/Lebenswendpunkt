@@ -21,13 +21,13 @@ export function Hero() {
               className="w-full h-auto object-cover rounded-xl shadow-2xl" 
             />
           </div>
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-primary mb-6 leading-tight">
-            Manchmal passt einfach <br className="hidden md:block" /> vieles nicht mehr
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif text-primary mb-6 leading-tight">
+            Wenn Du gerade nicht mehr weißt, <br className="hidden md:block" /> wie es weitergehen kann
           </h1>
           
           <p className="text-xl md:text-2xl text-foreground/90 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Dann bin ich da und wir schauen gemeinsam, <br />
-            was sich ändern lässt.
+            Dann bin ich da und begleite Dich <br />
+            bei den nächsten Schritten.
           </p>
         </motion.div>
 
