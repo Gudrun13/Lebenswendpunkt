@@ -46,9 +46,9 @@ export default function Workbooks() {
 
                   <div className="pt-6 border-t border-primary/5 flex items-center justify-between mt-auto">
                     <Link href={`/workbooks/${wb.slug}`}>
-                      <a className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors" data-testid={`link-workbook-${wb.slug}`}>
+                      <span className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors cursor-pointer" data-testid={`link-workbook-${wb.slug}`}>
                         Details <ArrowRight className="w-4 h-4 ml-2" />
-                      </a>
+                      </span>
                     </Link>
                   </div>
                 </div>

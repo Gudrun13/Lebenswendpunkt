@@ -9,7 +9,7 @@ export function FirstAidBot() {
   const [messages, setMessages] = useState([
     { 
       role: "bot", 
-      content: "Hallo. Ich bin Ihr Erste-Hilfe-Begleiter für akute Momente. Spüren Sie gerade starke Unruhe oder Angst?",
+      content: "Hallo. Ich bin Dein Erste-Hilfe-Begleiter für akute Momente. Spürst Du gerade starke Unruhe oder Angst?",
       options: ["Ja, ich brauche Hilfe", "Nein, ich schaue nur", "Notfallnummern"]
     }
   ]);
@@ -26,25 +26,25 @@ export function FirstAidBot() {
       if (option === "Ja, ich brauche Hilfe") {
         botResponse = {
           role: "bot",
-          content: "Das ist okay. Sie sind nicht allein. Wollen wir gemeinsam eine kurze Atemübung machen, um das Nervensystem zu beruhigen?",
+          content: "Das ist okay. Du bist nicht allein. Wollen wir gemeinsam eine kurze Atemübung machen, um das Nervensystem zu beruhigen?",
           options: ["Ja, gerne", "Lieber eine Bodenübung", "Notfallnummern"]
         };
       } else if (option === "Ja, gerne") {
          botResponse = {
           role: "bot",
-          content: "Gut. Atmen Sie tief durch die Nase ein (zählen Sie bis 4)... halten Sie kurz... und atmen Sie lange durch den Mund aus (zählen Sie bis 6). Wiederholen wir das.",
+          content: "Gut. Atme tief durch die Nase ein (zähle bis 4)... halte kurz... und atme lange durch den Mund aus (zähle bis 6). Wiederholen wir das.",
           options: ["Mir geht es etwas besser", "Nochmal"]
         };
       } else if (option.includes("Notfallnummern")) {
          botResponse = {
           role: "bot",
-          content: "Wichtig: Bei akuter Suizidgefahr rufen Sie bitte sofort die 112 oder die Telefonseelsorge (0800 111 0 111). Ich bin nur ein digitaler Assistent.",
+          content: "Wichtig: Bei akuter Suizidgefahr ruf bitte sofort die 112 oder die Telefonseelsorge (0800 111 0 111). Ich bin nur ein digitaler Assistent.",
           options: ["Zurück zum Anfang"]
         };
       } else {
         botResponse = {
           role: "bot",
-          content: "Ich bin hier, wenn Sie mich brauchen.",
+          content: "Ich bin hier, wenn Du mich brauchst.",
           options: ["Start"]
         };
       }
@@ -116,7 +116,7 @@ export function FirstAidBot() {
             <div className="p-3 bg-white border-t border-gray-100 flex gap-2">
               <input 
                 type="text" 
-                placeholder="Wählen Sie eine Option..." 
+                placeholder="Wähle eine Option..." 
                 disabled
                 className="flex-1 bg-gray-50 border-none rounded-full px-4 text-sm focus:ring-0 cursor-not-allowed"
               />

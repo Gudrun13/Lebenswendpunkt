@@ -10,11 +10,11 @@ export default function Privacy() {
         <div className="prose prose-lg max-w-none text-foreground/80">
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">1. Datenschutz auf einen Blick</h2>
           <p>
-            Allgemeine Hinweise: Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.
+            Allgemeine Hinweise: Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Deinen personenbezogenen Daten passiert, wenn Du diese Website besuchst.
           </p>
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">2. Allgemeine Hinweise und Pflichtinformationen</h2>
           <p>
-            Datenschutz: Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+            Datenschutz: Die Betreiber dieser Seiten nehmen den Schutz Deiner persönlichen Daten sehr ernst. Wir behandeln Deine personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
           </p>
           {/* More content would go here */}
         </div>

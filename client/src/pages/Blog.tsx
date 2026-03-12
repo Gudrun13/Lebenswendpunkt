@@ -70,9 +70,9 @@ export default function Blog() {
                     </div>
                     
                     <Link href={`/blog/${post.slug}`}>
-                      <a className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors">
+                      <span className="inline-flex items-center text-primary font-bold hover:text-primary/80 transition-colors cursor-pointer">
                         Weiterlesen <ArrowRight className="w-4 h-4 ml-2" />
-                      </a>
+                      </span>
                     </Link>
                   </div>
                 </div>

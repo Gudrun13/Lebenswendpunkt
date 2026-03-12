@@ -10,7 +10,7 @@ export default function Revocation() {
         <div className="prose prose-lg max-w-none text-foreground/80">
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Widerrufsrecht</h2>
           <p>
-            Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.
+            Du hast das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.
           </p>
           {/* More content would go here */}
         </div>

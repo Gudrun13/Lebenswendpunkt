@@ -46,12 +46,12 @@ export default function BlogPost() {
         <article className="container mx-auto px-4 max-w-3xl">
           {/* Back Link */}
           <div className="mb-8">
-             <Button variant="ghost" className="pl-0 text-muted-foreground hover:text-primary" asChild>
-               <a href="/blog">
-                 <ChevronLeft className="w-4 h-4 mr-2" />
-                 Zurück zur Übersicht
-               </a>
-             </Button>
+            <Link href="/blog">
+              <span className="inline-flex items-center text-muted-foreground hover:text-primary cursor-pointer transition-colors font-medium">
+                <ChevronLeft className="w-4 h-4 mr-2" />
+                Zurück zur Übersicht
+              </span>
+            </Link>
           </div>
 
           {/* Header */}
@@ -101,14 +101,14 @@ export default function BlogPost() {
 
           {/* Footer of Article */}
           <div className="mt-16 pt-12 border-t border-primary/10 text-center">
-            <h3 className="font-serif text-2xl text-primary mb-4">Hat dieser Artikel Sie berührt?</h3>
+            <h3 className="font-serif text-2xl text-primary mb-4">Hat dieser Artikel Dich berührt?</h3>
             <p className="text-foreground/80 mb-8 max-w-xl mx-auto">
               Manchmal lösen Texte Gedanken aus, die man gerne teilen oder vertiefen möchte. 
-              Ich bin gerne für Sie da.
+              Ich bin gerne für Dich da.
             </p>
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
               <a href="mailto:lebenswendepunkt13@gmail.com">
-                Schreiben Sie mir Ihre Gedanken
+                Schreib mir Deine Gedanken
               </a>
             </Button>
           </div>

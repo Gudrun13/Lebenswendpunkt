@@ -155,8 +155,8 @@ export function TeaserSection() {
             </DialogTitle>
             <DialogDescription>
               {isSubmitted 
-                ? "Ihr Freebie steht nun zum Download bereit." 
-                : "Bitte geben Sie Ihre E-Mail-Adresse ein, um das kostenlose Workbook zu erhalten."}
+                ? "Dein Freebie steht nun zum Download bereit." 
+                : "Bitte gib Deine E-Mail-Adresse ein, um das kostenlose Workbook zu erhalten."}
             </DialogDescription>
           </DialogHeader>
           
@@ -185,7 +185,7 @@ export function TeaserSection() {
                 <CheckCircle className="h-8 w-8" />
               </div>
               <p className="text-muted-foreground mb-4">
-                Wir haben Ihnen den Download-Link zusätzlich per E-Mail gesendet.
+                Wir haben Dir den Download-Link zusätzlich per E-Mail gesendet.
               </p>
               <Button className="w-full font-bold" onClick={() => window.open(DOWNLOAD_LINK, '_blank')}>
                 Download starten (Google Drive)

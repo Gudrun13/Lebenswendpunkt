@@ -1,7 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { workbooks } from "@/data/workbooks";
-import { useRoute } from "wouter";
+import { useRoute, Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { ChevronLeft, Clock, FileText, Mail, ExternalLink, ArrowRight } from "lucide-react";
@@ -20,12 +20,12 @@ export default function WorkbookDetail() {
       <main className="pt-32 pb-24">
         <article className="container mx-auto px-4 max-w-3xl">
           <div className="mb-8">
-            <Button variant="ghost" className="pl-0 text-muted-foreground hover:text-primary" asChild>
-              <a href="/workbooks" data-testid="link-back-workbooks">
+            <Link href="/workbooks">
+              <span className="inline-flex items-center text-muted-foreground hover:text-primary cursor-pointer transition-colors font-medium" data-testid="link-back-workbooks">
                 <ChevronLeft className="w-4 h-4 mr-2" />
                 Zurück zur Übersicht
-              </a>
-            </Button>
+              </span>
+            </Link>
           </div>
 
           <header className="mb-12 text-center md:text-left">

@@ -10,7 +10,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/">
-              <a className="text-2xl font-serif text-primary hover:text-primary/80 transition-colors">Lebenswendepunkt</a>
+              <span className="text-2xl font-serif text-primary hover:text-primary/80 transition-colors cursor-pointer">Lebenswendepunkt</span>
             </Link>
           </div>
 
