@@ -29,4 +29,22 @@ export const workbooks: Workbook[] = [
     ctaLabel: "Zum Newsletter anmelden",
     ctaHref: "/newsletter",
   },
+  {
+    id: "2",
+    slug: "vom-ich-zum-wir",
+    title: "Vom Ich zum Wir",
+    tagline: "Beziehung bewusst, stabil und liebevoll gestalten.",
+    description:
+      "Dieses Workbook begleitet Dich dabei, Deine Beziehung von Anfang an bewusst zu gestalten. Es eröffnet einen geschützten Raum zur Reflexion, zum Austausch und zur persönlichen Entwicklung – für Dich allein oder gemeinsam.",
+    bullets: [
+      "Beziehung beginnt im Inneren",
+      "Kommunikation, die Nähe schafft",
+      "Zusammenleben in gesunder Balance",
+      "Rituale, die im Alltag Halt geben",
+    ],
+    duration: "Flexibel / In Deinem eigenen Tempo",
+    format: "PDF / Workbook",
+    ctaLabel: "Workbook öffnen",
+    ctaHref: "https://drive.google.com/file/d/1kc0MvIndSMr5xByUsKyLbIBVNPsEyNGK/view?usp=sharing",
+  },
 ];

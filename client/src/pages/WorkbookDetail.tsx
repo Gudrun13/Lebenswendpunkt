@@ -4,7 +4,7 @@ import { workbooks } from "@/data/workbooks";
 import { useRoute } from "wouter";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
-import { ChevronLeft, Clock, FileText, Mail } from "lucide-react";
+import { ChevronLeft, Clock, FileText, Mail, ExternalLink, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function WorkbookDetail() {
@@ -62,8 +62,8 @@ export default function WorkbookDetail() {
 
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
               <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif" asChild>
-                <a href={workbook.ctaHref} data-testid="button-workbook-email">
-                  <Mail className="w-4 h-4 mr-2" />
+                <a href={workbook.ctaHref} target={workbook.ctaHref.startsWith('http') ? '_blank' : undefined} rel={workbook.ctaHref.startsWith('http') ? 'noopener noreferrer' : undefined} data-testid="button-workbook-email">
+                  {workbook.ctaHref.startsWith('mailto:') ? <Mail className="w-4 h-4 mr-2" /> : workbook.ctaHref.startsWith('http') ? <ExternalLink className="w-4 h-4 mr-2" /> : <ArrowRight className="w-4 h-4 mr-2" />}
                   {workbook.ctaLabel}
                 </a>
               </Button>
