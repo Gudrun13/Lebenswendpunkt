@@ -39,11 +39,10 @@ export function Hero() {
         >
           <div className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-serif text-primary">
-              Genau dafür bin ich da:
+              Manchmal ist nur eines klar:
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Wenn gerade etwas nicht mehr stimmt. Du merkst, dass es so nicht weitergeht, 
-              auch wenn noch offen ist, wie es anders werden kann.
+              So geht es nicht weiter. Alles andere ist noch offen.
             </p>
           </div>
 
