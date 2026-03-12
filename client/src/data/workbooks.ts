@@ -26,7 +26,7 @@ export const workbooks: Workbook[] = [
     ],
     duration: "20–30 Minuten (oder in Etappen)",
     format: "PDF / Workbook",
-    ctaLabel: "Jetzt anfragen",
-    ctaHref: "mailto:lebenswendepunkt13@gmail.com?subject=Workbook%20Anfrage%3A%2020%20St%C3%A4rkungstools",
+    ctaLabel: "Zum Newsletter anmelden",
+    ctaHref: "/newsletter",
   },
 ];
