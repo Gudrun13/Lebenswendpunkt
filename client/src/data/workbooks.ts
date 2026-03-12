@@ -47,4 +47,22 @@ export const workbooks: Workbook[] = [
     ctaLabel: "Workbook öffnen",
     ctaHref: "https://drive.google.com/file/d/1kc0MvIndSMr5xByUsKyLbIBVNPsEyNGK/view?usp=sharing",
   },
+  {
+    id: "3",
+    slug: "3-minuten-methode",
+    title: "Die 3-Minuten-Methode",
+    tagline: "Wie Du die Angst vor der nächsten Panikattacke sofort entschärfst.",
+    description:
+      "Ein sanfter Minikurs in 5 Modulen, der Dir hilft, Erwartungsangst zu verstehen und Deinen Körper in akuten Momenten aus dem Alarmmodus zu holen – ohne Druck, nur mit Dir und in Deinem Tempo.",
+    bullets: [
+      "Die Angst vor der Angst verstehen",
+      "Körper beruhigen durch 4-2-6-Atmung",
+      "Gedanken unterbrechen und neu ausrichten",
+      "Praktische Anwendung im Alltag (Auto, Supermarkt, etc.)",
+    ],
+    duration: "5 sofort umsetzbare Module",
+    format: "PDF / Minikurs",
+    ctaLabel: "Workbook öffnen",
+    ctaHref: "https://drive.google.com/file/d/1gAeRMmAaiOM41h-hYrXuh-ohwwT5d00-/view?usp=sharing",
+  },
 ];
