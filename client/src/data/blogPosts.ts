@@ -8,6 +8,8 @@ export interface BlogPost {
   content: string[]; // Array of paragraphs
   readTime: string;
   image?: string;
+  metaTitle?: string;
+  metaDescription?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -36,6 +38,66 @@ export const blogPosts: BlogPost[] = [
       "Vielleicht hast Du Lust, das einmal bei Dir zu beobachten. Nicht als Selbstoptimierung, sondern als forschenden Blick auf Dein Gesprächsverhalten.",
       "An welchen Stellen wirst Du schnell? Wann willst Du „nur kurz“ reingrätschen? Was passiert in Dir, wenn der andere länger braucht? Und wie ist es für Dich, wenn Du selbst unterbrochen wirst?",
       "Diese kleinen Stellen sind oft die, an denen sich Beziehung entscheidet. Nicht in den großen Diskussionen, sondern im Alltagston. In den Sekunden, in denen man wählen kann: halte ich den Raum – oder nehme ich ihn?"
+    ]
+  },
+  {
+    id: "2",
+    slug: "was-ich-tat-als-er-vor-allen-schrie",
+    title: "Was ich tat, als er vor allen schrie",
+    excerpt: "Eine konkrete Szene, eine klare innere Haltung und die Frage, die Dich zurück zu Dir holt.",
+    metaTitle: "Was ich tat, als er vor allen schrie",
+    metaDescription: "Wo gibst Du Deine Kraft ab. Und was kannst Du konkret tun, um sie wieder zu Dir zu holen. Eine Szene aus dem Arbeitsalltag über Selbstwirksamkeit.",
+    date: "12. März 2026",
+    author: "Gudrun Murina",
+    readTime: "3 Min. Lesezeit",
+    content: [
+      "Der erste Schwung vom Jahresanfang ist meist vorbei.",
+      "Der Alltag läuft wieder. Und oft zeigt sich jetzt klarer, wo Du Dich anpasst, stillhältst oder hoffst, dass andere sich endlich anders verhalten.",
+      "Heute geht es um einen nüchternen Blick auf Deine Position.",
+      "Um die Frage: Wo gibst Du Deine Kraft ab? Und was kannst Du konkret tun, um sie wieder zu Dir zu holen?",
+      "Selbstwirksamkeit, wie ich sie meine",
+      "Selbstwirksamkeit ist für mich kein großes Wort.",
+      "Sie ist der Moment, in dem Du wieder spürst: Ich bin beteiligt. Ich bin nicht ausgeliefert.",
+      "Und ja, manchmal klopft dabei das Herz schneller. Gleichzeitig wird es leichter, weil Du eine Entscheidung triffst und sie lebst.",
+      "„Selbstwirksamkeit ist eine Entscheidung, die Du triffst und lebst.“",
+      "Wann gibst Du Deine Kraft ab?",
+      "Ich erinnere mich an eine frühere Arbeitsstelle.",
+      "Der Chef war laut und unberechenbar. Er schrie vor versammelter Mannschaft. Niemand wusste, wen es als Nächstes traf.",
+      "Ich brauchte diesen Job. Gehen war keine Option.",
+      "Also stellte ich mir eine Frage, die zum Drehpunkt wurde:",
+      "Was ist unter diesen Bedingungen für mich möglich?",
+      "Ich hörte auf, innerlich mit ihm zu diskutieren.",
+      "Ich wartete nicht mehr darauf, dass er sich ändert.",
+      "Stattdessen richtete ich meine Aufmerksamkeit zurück auf mich.",
+      "Wenn er losschrie, stellte ich beide Füße fest auf den Boden.",
+      "Ich hob den Kopf und atmete weiter, mit der Haltung: Mich brüllst Du nicht mehr an.",
+      "Und ich wusste: Wenn er es trotzdem tut, stehe ich auf und verlasse kommentarlos den Raum.",
+      "Er schrie weiter. Es traf mich nie wieder.",
+      "Ich habe nicht ihn verändert.",
+      "Ich habe verändert, wie ich in mir stehe.",
+      "Die entscheidende Frage bleibt jedoch: Was tust Du jetzt?",
+      "Vielleicht kennst Du das: Jemand überschreitet immer wieder Deine Grenze.",
+      "In einem Gespräch, in einer Beziehung, im Team. Und ein Teil in Dir hofft, dass diese Person irgendwann einsichtig wird.",
+      "Die entscheidende Frage bleibt jedoch: Was tust Du jetzt?",
+      "Es geht nicht darum, alles hinzunehmen. Und auch nicht darum, sofort alles zu beenden.",
+      "Manchmal ist der erste Schritt klein. Ein klarer Satz. Eine Grenze. Oder die Entscheidung, Dich innerlich nicht mehr herabzusetzen.",
+      "Zwei Situationen, die viele kennen",
+      "1) Deine Arbeit wird abgewertet.",
+      "In einer Besprechung fällt ein Satz, der Dich klein macht. Bisher hast Du geschwiegen.",
+      "Dein nächster Schritt könnte sein, ruhig zu sagen: „So möchte ich hier nicht angesprochen werden.“",
+      "Mehr nicht. Dennoch ausgesprochen.",
+      "2) Du bist dauerhaft überfordert.",
+      "Du merkst, dass eine Aufgabe Dich aufreibt.",
+      "Selbstwirksamkeit kann heißen, das offen anzusprechen, statt weiter zu funktionieren.",
+      "Nicht irgendwann. Jetzt. In der Form, die heute möglich ist.",
+      "Wenn Dein Herz schneller klopft",
+      "Vielleicht klopft Dein Herz schneller, wenn Du etwas veränderst. Das ist normal.",
+      "Entscheidend ist, dass Du Dir selbst glaubst, wenn Du merkst: So will ich nicht weitermachen.",
+      "Nimm Dir dafür zwei Fragen mit:",
+      "Wo hoffst Du gerade, dass andere sich verändern?",
+      "Und was liegt heute in Deinem Einflussbereich?",
+      "Es geht nicht um große Schritte.",
+      "Es geht um Deinen nächsten."
     ]
   }
 ];

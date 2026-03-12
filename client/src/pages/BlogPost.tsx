@@ -6,10 +6,33 @@ import { Calendar, Clock, User, ChevronLeft, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
   const post = blogPosts.find(p => p.slug === params?.slug);
+
+  useEffect(() => {
+    if (post?.metaTitle) {
+      document.title = post.metaTitle;
+    }
+    if (post?.metaDescription) {
+      let metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", post.metaDescription);
+      } else {
+        metaDescription = document.createElement("meta");
+        metaDescription.setAttribute("name", "description");
+        metaDescription.setAttribute("content", post.metaDescription);
+        document.head.appendChild(metaDescription);
+      }
+    }
+    
+    // Reset on unmount
+    return () => {
+      document.title = "Lebenswendepunkt";
+    }
+  }, [post]);
 
   if (!post) {
     return <NotFound />;
