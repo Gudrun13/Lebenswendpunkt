@@ -3,26 +3,11 @@ import { ArrowRight, BookOpen, Gift, User, LayoutGrid, CheckCircle } from "lucid
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ZohoNewsletterForm } from "@/components/ZohoNewsletterForm";
 
 export function TeaserSection() {
   const [showFreebieDialog, setShowFreebieDialog] = useState(false);
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // Hier können wir später Ihren Google Drive Link einfügen
-  const DOWNLOAD_LINK = "https://drive.google.com/file/d/15sCCVjJZOl9Sk6LKkzG3wb3LRkPHd-Rf/view?usp=drive_link"; 
-
-  const handleFreebieSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) {
-      setIsSubmitted(true);
-      // In a real app, this would trigger an email signup API call
-      // and then provide the file download
-    }
-  };
 
   const teasers = [
     {
@@ -148,50 +133,8 @@ export function TeaserSection() {
       </div>
 
       <Dialog open={showFreebieDialog} onOpenChange={setShowFreebieDialog}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle className="font-serif text-2xl text-primary">
-              {isSubmitted ? "Vielen Dank!" : "Freebie herunterladen"}
-            </DialogTitle>
-            <DialogDescription>
-              {isSubmitted 
-                ? "Dein Freebie steht nun zum Download bereit." 
-                : "Bitte gib Deine E-Mail-Adresse ein, um das kostenlose Workbook zu erhalten."}
-            </DialogDescription>
-          </DialogHeader>
-          
-          {!isSubmitted ? (
-            <form onSubmit={handleFreebieSubmit} className="space-y-4 py-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">E-Mail-Adresse</Label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  placeholder="name@beispiel.de" 
-                  required 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <DialogFooter>
-                <Button type="submit" className="w-full font-bold">
-                  Jetzt kostenlos anfordern
-                </Button>
-              </DialogFooter>
-            </form>
-          ) : (
-            <div className="py-6 flex flex-col items-center gap-4 text-center">
-              <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-2">
-                <CheckCircle className="h-8 w-8" />
-              </div>
-              <p className="text-muted-foreground mb-4">
-                Wir haben Dir den Download-Link zusätzlich per E-Mail gesendet.
-              </p>
-              <Button className="w-full font-bold" onClick={() => window.open(DOWNLOAD_LINK, '_blank')}>
-                Download starten (Google Drive)
-              </Button>
-            </div>
-          )}
+        <DialogContent className="sm:max-w-md pt-10">
+          <ZohoNewsletterForm />
         </DialogContent>
       </Dialog>
     </section>
