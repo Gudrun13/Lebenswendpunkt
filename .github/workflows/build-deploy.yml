@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,12 +25,13 @@ jobs:
         run: npm install
 
       - name: React-App bauen (nur Frontend)
-        run: npx vite build
+        run: npx vite build --config vite.config.ts
         env:
           NODE_ENV: production
+          CI: true
 
       - name: .htaccess in Build-Ordner kopieren
-        run: cp client/public/.htaccess dist/public/.htaccess 2>/dev/null || true
+        run: cp client/public/.htaccess dist/public/.htaccess
 
       - name: Fertigen Build in hostinger-deploy Branch pushen
         uses: peaceiris/actions-gh-pages@v4
@@ -36,4 +40,5 @@ jobs:
           publish_dir: ./dist/public
           publish_branch: hostinger-deploy
           force_orphan: true
+          enable_jekyll: false
           commit_message: "Build für Hostinger – ${{ github.sha }}"
