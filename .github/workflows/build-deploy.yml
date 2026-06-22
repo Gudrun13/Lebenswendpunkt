@@ -1,0 +1,39 @@
+name: Build & Deploy für Hostinger
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Abhängigkeiten installieren
+        run: npm install
+
+      - name: React-App bauen (nur Frontend)
+        run: npx vite build
+        env:
+          NODE_ENV: production
+
+      - name: .htaccess in Build-Ordner kopieren
+        run: cp client/public/.htaccess dist/public/.htaccess 2>/dev/null || true
+
+      - name: Fertigen Build in hostinger-deploy Branch pushen
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/public
+          publish_branch: hostinger-deploy
+          force_orphan: true
+          commit_message: "Build für Hostinger – ${{ github.sha }}"
