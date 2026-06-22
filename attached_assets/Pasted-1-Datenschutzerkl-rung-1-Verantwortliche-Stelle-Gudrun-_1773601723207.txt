@@ -1,0 +1,62 @@
+1.Datenschutzerklärung
+1. Verantwortliche Stelle
+Gudrun Murina
+Praxis Lebenswendepunkt
+Hagenstr.1  26419 Schortens
+E-Mail:lebendswendepunkt13@gmail.com
+Website: www.lebendswendepunk.de
+
+2. Allgemeine Hinweise
+Der Schutz Ihrer personenbezogenen Daten ist mir ein wichtiges Anliegen. Ich behandle Ihre Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
+
+3. Hosting und E-Mail-Kommunikation
+Diese Website wird bei All-inkl.com gehostet.
+E-Mail-Kommunikation erfolgt über Google Workspace mit DSGVO-konformer Auftragsverarbeitung.
+
+4. Zugriffsdaten und Server-Logfiles
+Beim Besuch der Website erhebt der Webhoster automatisiert Daten wie:
+– IP-Adresse
+– Browsertyp und Version
+– Datum und Uhrzeit der Anfrage
+– Referrer-URL
+Diese Daten dienen der technischen Sicherheit und werden nicht mit anderen Datenquellen zusammengeführt.
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO
+
+5. Kontaktaufnahme per E-Mail oder Formular
+Wenn Sie mich per E-Mail oder Formular kontaktieren, werden die von Ihnen übermittelten Angaben zwecks Bearbeitung der Anfrage sowie für mögliche Anschlussfragen gespeichert.
+Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
+
+6. Verwendung eines KI-Chatbots
+Auf dieser Webseite ist ein KI-gestützter Chatbot eingebunden. Dieser dient der digitalen Unterstützung bei allgemeinen Fragen und zur Erstorientierung zu meinen Angeboten.
+Anbieter: Der Bot wird bereitgestellt über https://botpress.com
+Datenschutzerklärung des Anbieters: https://botpress.com/legal/privacy-statement
+Verarbeitete Daten:
+– Vom Nutzer eingegebene Chat-Nachrichten
+– Zeitstempel des Chats
+– Technische Metadaten (z. B. Browserinformationen)
+Ich empfehle, keine sensiblen personenbezogenen Daten in den Chat einzugeben (z. B. Gesundheitsdaten).
+Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO
+
+7. Google Workspace
+Zur Verwaltung von E-Mails, Kalendern und Dokumenten nutze ich Google Workspace.
+Mit Google wurde ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO abgeschlossen.
+Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de
+
+8. Cookies und eingebettete Inhalte
+Diese Webseite verwendet nur technisch notwendige Cookies.
+Falls Drittanbieter-Inhalte eingebunden werden (z. B. YouTube, Google Maps), können diese Daten sammeln – bitte beachten Sie die jeweiligen Datenschutzrichtlinien der Anbieter.
+
+9. Ihre Rechte
+Sie haben das Recht:
+– Auskunft über Ihre gespeicherten Daten zu verlangen (Art. 15 DSGVO)
+– Berichtigung oder Löschung zu verlangen (Art. 16/17 DSGVO)
+– Einschränkung der Verarbeitung zu fordern (Art. 18 DSGVO)
+– Widerspruch gegen die Verarbeitung einzulegen (Art. 21 DSGVO)
+– Datenübertragbarkeit zu verlangen (Art. 20 DSGVO)
+– Sich bei einer Aufsichtsbehörde zu beschweren
+
+10. Auftragsverarbeitung
+Mit allen relevanten Dienstleistern wurde ein Vertrag zur Auftragsverarbeitung abgeschlossen.
+
+11. Änderungen der Datenschutzerklärung
+Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, z. B. bei neuen technischen Funktionen.

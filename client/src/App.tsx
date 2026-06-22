@@ -1,0 +1,56 @@
+import { Switch, Route } from "wouter";
+import { queryClient } from "./lib/queryClient";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { Toaster } from "@/components/ui/toaster";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import NotFound from "@/pages/not-found";
+import Home from "@/pages/Home";
+import Offers from "@/pages/Offers";
+import Workbooks from "@/pages/Workbooks";
+import WorkbookDetail from "@/pages/WorkbookDetail";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
+import About from "@/pages/About";
+import Newsletter from "@/pages/Newsletter";
+import Privacy from "@/pages/Privacy";
+import Imprint from "@/pages/Imprint";
+import Terms from "@/pages/Terms";
+import Revocation from "@/pages/Revocation";
+
+import { FirstAidBot } from "@/components/FirstAidBot";
+
+function Router() {
+  return (
+    <div className="relative min-h-screen">
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/angebote" component={Offers} />
+        <Route path="/workbooks" component={Workbooks} />
+        <Route path="/workbooks/:slug" component={WorkbookDetail} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug" component={BlogPost} />
+        <Route path="/ueber-mich" component={About} />
+        <Route path="/newsletter" component={Newsletter} />
+        <Route path="/datenschutz" component={Privacy} />
+        <Route path="/impressum" component={Imprint} />
+        <Route path="/agb" component={Terms} />
+        <Route path="/widerruf" component={Revocation} />
+        <Route component={NotFound} />
+      </Switch>
+      <FirstAidBot />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Router />
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
+
+export default App;
