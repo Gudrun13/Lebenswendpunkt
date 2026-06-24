@@ -1,13 +1,14 @@
 RewriteEngine On
+RewriteBase /
 
 # HTTPS erzwingen
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Statische Dateien direkt ausliefern
+# Existierende Dateien und Ordner direkt ausliefern
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Alle anderen Routen an index.html (React SPA)
-RewriteRule ^ /index.html [L]
+# Alle anderen Routen (z.B. /datenschutz, /agb, /blog/...) an index.html
+RewriteRule ^ index.html [L]

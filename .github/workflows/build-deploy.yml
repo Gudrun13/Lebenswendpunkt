@@ -26,8 +26,8 @@ jobs:
       - name: React-App bauen
         run: npm run build
 
-      - name: .htaccess kopieren
-        run: cp client/public/.htaccess dist/public/.htaccess
+      - name: .htaccess sicherstellen (Vite kopiert Dotfiles nicht immer)
+        run: cp -f client/public/.htaccess dist/public/.htaccess && echo "✅ .htaccess kopiert" && ls -la dist/public/.htaccess
 
       - name: Fertigen Build in hostinger-deploy Branch pushen
         uses: peaceiris/actions-gh-pages@v4
