@@ -3,13 +3,18 @@ import { Footer } from "@/components/Footer";
 import { workbooks } from "@/data/workbooks";
 import { useRoute, Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import NotFound from "@/pages/not-found";
-import { ChevronLeft, Clock, FileText, Mail, ExternalLink, ArrowRight } from "lucide-react";
+import { ChevronLeft, Clock, FileText, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { useState } from "react";
+
+const BREVO_SRC = "https://e7c8a181.sibforms.com/v2/serve/MUIFAH2uWozafOCmoHWHTS_y_hko__fmypiwamUQxA5Ch-5zagg3vWxMiPOWbrl_bozjgeushKKc94uqjbMz4ZAoRfNvJNV-d8meaaSv8rkm8qD6-qX4omTWEf0uL3IAfJE2l6og8pIF-OlXKqqJmciJDo37cYEwyABq0o22qAzzmyRAFmKpRG7guLNv2-6Z2eQG_GkHdLZ24VtsAw==";
 
 export default function WorkbookDetail() {
   const [, params] = useRoute("/workbooks/:slug");
   const workbook = workbooks.find((w) => w.slug === params?.slug);
+  const [showNewsletter, setShowNewsletter] = useState(false);
 
   if (!workbook) return <NotFound />;
 
@@ -61,11 +66,9 @@ export default function WorkbookDetail() {
             </ul>
 
             <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif" asChild>
-                <a href={workbook.ctaHref} target={workbook.ctaHref.startsWith('http') ? '_blank' : undefined} rel={workbook.ctaHref.startsWith('http') ? 'noopener noreferrer' : undefined} data-testid="button-workbook-email">
-                  {workbook.ctaHref.startsWith('mailto:') ? <Mail className="w-4 h-4 mr-2" /> : workbook.ctaHref.startsWith('http') ? <ExternalLink className="w-4 h-4 mr-2" /> : <ArrowRight className="w-4 h-4 mr-2" />}
-                  {workbook.ctaLabel}
-                </a>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90 font-serif" onClick={() => setShowNewsletter(true)} data-testid="button-workbook-email">
+                <ArrowRight className="w-4 h-4 mr-2" />
+                Jetzt kostenlos anmelden & erhalten
               </Button>
               <Button variant="outline" className="border-primary/20 text-primary hover:bg-primary/5" asChild>
                 <a href="/angebote" data-testid="button-workbook-offers">
@@ -78,6 +81,20 @@ export default function WorkbookDetail() {
       </main>
 
       <Footer />
+
+      <Dialog open={showNewsletter} onOpenChange={setShowNewsletter}>
+        <DialogContent className="sm:max-w-xl p-0 overflow-hidden">
+          <iframe
+            width="540"
+            height="305"
+            src={BREVO_SRC}
+            frameBorder="0"
+            scrolling="auto"
+            allowFullScreen
+            style={{ display: "block", marginLeft: "auto", marginRight: "auto", maxWidth: "100%" }}
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
