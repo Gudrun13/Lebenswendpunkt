@@ -10,7 +10,6 @@ export function Navigation() {
   const navLinks = [
     { name: "Startseite", href: "/" },
     { name: "Angebote", href: "/angebote" },
-    { name: "Workbooks", href: "/workbooks" },
     { name: "Blog", href: "/blog" },
     { name: "Über mich", href: "/ueber-mich" },
   ];
