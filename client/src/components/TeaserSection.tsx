@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, BookOpen, Gift, User, LayoutGrid, CheckCircle } from "lucide-react";
+import { ArrowRight, BookOpen, Gift, User, LayoutGrid } from "lucide-react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { ZohoNewsletterForm } from "@/components/ZohoNewsletterForm";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 export function TeaserSection() {
   const [showFreebieDialog, setShowFreebieDialog] = useState(false);
@@ -133,8 +132,16 @@ export function TeaserSection() {
       </div>
 
       <Dialog open={showFreebieDialog} onOpenChange={setShowFreebieDialog}>
-        <DialogContent className="sm:max-w-md pt-10">
-          <ZohoNewsletterForm />
+        <DialogContent className="sm:max-w-xl p-0 overflow-hidden">
+          <iframe
+            width="540"
+            height="305"
+            src="https://e7c8a181.sibforms.com/v2/serve/MUIFAH2uWozafOCmoHWHTS_y_hko__fmypiwamUQxA5Ch-5zagg3vWxMiPOWbrl_bozjgeushKKc94uqjbMz4ZAoRfNvJNV-d8meaaSv8rkm8qD6-qX4omTWEf0uL3IAfJE2l6og8pIF-OlXKqqJmciJDo37cYEwyABq0o22qAzzmyRAFmKpRG7guLNv2-6Z2eQG_GkHdLZ24VtsAw=="
+            frameBorder="0"
+            scrolling="auto"
+            allowFullScreen
+            style={{ display: "block", marginLeft: "auto", marginRight: "auto", maxWidth: "100%" }}
+          />
         </DialogContent>
       </Dialog>
     </section>
