@@ -1,14 +1,9 @@
-import { Mail, CheckCircle } from "lucide-react";
-import { useState } from "react";
+import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
-import { ZohoNewsletterForm } from "./ZohoNewsletterForm";
 
 export function NewsletterSection() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
   return (
     <section className="py-20 px-4 bg-amber-50 text-foreground relative overflow-hidden" id="newsletter">
-      {/* Abstract Background Element */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[80px] rounded-full pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-primary/5 blur-[60px] rounded-full pointer-events-none" />
 
@@ -32,10 +27,18 @@ export function NewsletterSection() {
             Ich freue mich!
           </p>
 
-          <div className="max-w-xl mx-auto text-left bg-white p-6 rounded-xl shadow-sm border border-primary/10">
-            <ZohoNewsletterForm />
+          <div className="max-w-xl mx-auto bg-white rounded-xl shadow-sm border border-primary/10 overflow-hidden">
+            <iframe
+              width="540"
+              height="305"
+              src="https://e7c8a181.sibforms.com/v2/serve/MUIFAH2uWozafOCmoHWHTS_y_hko__fmypiwamUQxA5Ch-5zagg3vWxMiPOWbrl_bozjgeushKKc94uqjbMz4ZAoRfNvJNV-d8meaaSv8rkm8qD6-qX4omTWEf0uL3IAfJE2l6og8pIF-OlXKqqJmciJDo37cYEwyABq0o22qAzzmyRAFmKpRG7guLNv2-6Z2eQG_GkHdLZ24VtsAw=="
+              frameBorder="0"
+              scrolling="auto"
+              allowFullScreen
+              style={{ display: "block", marginLeft: "auto", marginRight: "auto", maxWidth: "100%" }}
+            />
           </div>
-          
+
           <p className="mt-6 text-sm text-muted-foreground">
             Ich respektiere Deine Privatsphäre. Abmeldung jederzeit möglich.
           </p>
