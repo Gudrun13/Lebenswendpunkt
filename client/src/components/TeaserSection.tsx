@@ -31,11 +31,12 @@ export function TeaserSection() {
     {
       title: "Workbooks",
       description: "Für Dich zusammengestellt. Workbooks die Dich stärken und sortieren helfen.",
+      eyebrow: "Erst anmelden, dann entdecken.",
       icon: BookOpen,
       image: "/workbook-image.png",
-      href: "/workbooks",
+      action: "modal",
       buttonText: "Workbooks entdecken",
-      color: "bg-amber-50" // Light gold/amber background matching brand
+      color: "bg-amber-50"
     },
     {
       title: "Blog",
