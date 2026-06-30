@@ -29,16 +29,6 @@ export function TeaserSection() {
       color: "bg-white"
     },
     {
-      title: "Workbooks",
-      description: "Für Dich zusammengestellt. Workbooks die Dich stärken und sortieren helfen.",
-      eyebrow: "Erst anmelden, dann entdecken.",
-      icon: BookOpen,
-      image: "/workbook-image.png",
-      action: "modal",
-      buttonText: "Workbooks entdecken",
-      color: "bg-amber-50"
-    },
-    {
       title: "Blog",
       description: "Gedankenräume, Impulse und Klartext. Hier schreibe ich über das, was mich bewegt.",
       icon: BookOpen,
