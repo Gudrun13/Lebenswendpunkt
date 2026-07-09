@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /datenschutz
+Disallow: /impressum
+Disallow: /agb
+Disallow: /widerruf
+
+Sitemap: https://lebenswendepunkt.de/sitemap.xml
