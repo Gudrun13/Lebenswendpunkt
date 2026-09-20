@@ -74,13 +74,6 @@ export default function About() {
       ],
     },
     {
-      title: "Mein KI-gestützter Begleiter",
-      paragraphs: [
-        "Ein Teil dieser Entwicklung ist mein KI-gestützter Begleiter. Ein Gesprächsbot, den ich für Menschen in Umbruchphasen entwickelt habe.",
-        "Wenn Du zunächst anonym und in Deinem eigenen Tempo erste Impulse sammeln möchtest, kannst Du ihn gern ausprobieren. Kostenfrei und jederzeit erreichbar.",
-      ],
-    },
-    {
       title: "Was mir wichtig ist",
       paragraphs: [
         "Mir ist wichtig, dass Du Dich bei mir sicher fühlst.",

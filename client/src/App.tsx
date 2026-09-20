@@ -17,7 +17,6 @@ import Imprint from "@/pages/Imprint";
 import Terms from "@/pages/Terms";
 import Revocation from "@/pages/Revocation";
 
-import { FirstAidBot } from "@/components/FirstAidBot";
 
 function Router() {
   return (
@@ -37,7 +36,6 @@ function Router() {
         <Route path="/widerruf" component={Revocation} />
         <Route component={NotFound} />
       </Switch>
-      <FirstAidBot />
     </div>
   );
 }

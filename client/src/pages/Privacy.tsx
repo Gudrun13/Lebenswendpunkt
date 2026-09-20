@@ -58,39 +58,20 @@ export default function Privacy() {
             Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">6. Verwendung eines KI-Chatbots</h2>
-          <p>
-            Auf dieser Webseite ist ein KI-gestützter Chatbot eingebunden. Dieser dient der digitalen Unterstützung bei allgemeinen Fragen und zur Erstorientierung zu meinen Angeboten.<br />
-            <strong>Anbieter:</strong> Der Bot wird bereitgestellt über <a href="https://botpress.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://botpress.com</a><br />
-            <strong>Datenschutzerklärung des Anbieters:</strong> <a href="https://botpress.com/legal/privacy-statement" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://botpress.com/legal/privacy-statement</a>
-          </p>
-          <p>
-            <strong>Verarbeitete Daten:</strong>
-          </p>
-          <ul>
-            <li>Vom Nutzer eingegebene Chat-Nachrichten</li>
-            <li>Zeitstempel des Chats</li>
-            <li>Technische Metadaten (z. B. Browserinformationen)</li>
-          </ul>
-          <p>
-            Ich empfehle, keine sensiblen personenbezogenen Daten in den Chat einzugeben (z. B. Gesundheitsdaten).<br />
-            Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO
-          </p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">7. Google Workspace</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">6. Google Workspace</h2>
           <p>
             Zur Verwaltung von E-Mails, Kalendern und Dokumenten nutze ich Google Workspace.<br />
             Mit Google wurde ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO abgeschlossen.<br />
             Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://policies.google.com/privacy?hl=de</a>
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">8. Cookies und eingebettete Inhalte</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">7. Cookies und eingebettete Inhalte</h2>
           <p>
             Diese Webseite verwendet nur technisch notwendige Cookies.<br />
             Falls Drittanbieter-Inhalte eingebunden werden (z. B. YouTube, Google Maps), können diese Daten sammeln – bitte beachte die jeweiligen Datenschutzrichtlinien der Anbieter.
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">9. Deine Rechte</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">8. Deine Rechte</h2>
           <p>
             Du hast das Recht:
           </p>
@@ -103,12 +84,12 @@ export default function Privacy() {
             <li>Dich bei einer Aufsichtsbehörde zu beschweren</li>
           </ul>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">10. Auftragsverarbeitung</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">9. Auftragsverarbeitung</h2>
           <p>
             Mit allen relevanten Dienstleistern wurde ein Vertrag zur Auftragsverarbeitung abgeschlossen.
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">11. Änderungen der Datenschutzerklärung</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">10. Änderungen der Datenschutzerklärung</h2>
           <p>
             Ich behalte mir vor, diese Datenschutzerklärung bei Bedarf anzupassen, z. B. bei neuen technischen Funktionen.
           </p>
