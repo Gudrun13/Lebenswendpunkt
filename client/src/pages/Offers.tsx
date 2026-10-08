@@ -65,6 +65,9 @@ export default function Offers() {
             <p className="text-xl text-foreground/80 leading-relaxed max-w-2xl mx-auto">
               Jeder Weg ist einzigartig. Hier findest Du alles, was ich anbiete.
             </p>
+            <p className="text-base text-foreground/70 leading-relaxed max-w-2xl mx-auto mt-4">
+              Meine Begleitung ist eine Selbstzahlerleistung. Das gibt uns den Raum, uns Zeit zu nehmen und genau das zu tun, was Dir jetzt guttut, ohne Diagnose und ohne Kassenvorgaben.
+            </p>
           </motion.div>
         </section>
 

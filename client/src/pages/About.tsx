@@ -145,6 +145,9 @@ export default function About() {
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </a>
                     </Button>
+                    <p className="text-sm text-foreground/70 leading-relaxed mt-6 max-w-xl mx-auto">
+                      Meine Begleitung ist eine Selbstzahlerleistung. Das gibt uns den Raum, uns Zeit zu nehmen und genau das zu tun, was Dir jetzt guttut, ohne Diagnose und ohne Kassenvorgaben.
+                    </p>
                   </section>
                 </div>
               </div>
