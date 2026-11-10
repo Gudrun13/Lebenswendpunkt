@@ -20,7 +20,7 @@ export default function Privacy() {
           <p>
             Gudrun Murina<br />
             Praxis Lebenswendepunkt<br />
-            Hagenstr. 1<br />
+            Theodor-Heuss-Ring 14<br />
             26419 Schortens<br />
             E-Mail: <a href="mailto:lebenswendepunkt13@gmail.com" className="text-primary hover:underline">lebenswendepunkt13@gmail.com</a><br />
             Website: <a href="https://www.lebenswendepunkt.de" className="text-primary hover:underline">www.lebenswendepunkt.de</a>
@@ -67,8 +67,16 @@ export default function Privacy() {
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">7. Cookies und eingebettete Inhalte</h2>
           <p>
-            Diese Webseite verwendet nur technisch notwendige Cookies.<br />
-            Falls Drittanbieter-Inhalte eingebunden werden (z. B. YouTube, Google Maps), können diese Daten sammeln – bitte beachte die jeweiligen Datenschutzrichtlinien der Anbieter.
+            Ohne Deine Zustimmung setzt diese Webseite keine Cookies. Deine Auswahl im Cookie-Hinweis wird im Speicher Deines Browsers (localStorage) abgelegt, damit der Hinweis nicht bei jedem Besuch erneut erscheint.<br />
+            Die Schriftarten werden direkt von dieser Webseite geladen, nicht von Google-Servern.<br />
+            Falls Drittanbieter-Inhalte eingebunden werden (z. B. YouTube, Google Maps), können diese Daten sammeln – bitte beachte die jeweiligen Datenschutzrichtlinien der Anbieter.
+          </p>
+
+          <h3 className="text-xl font-serif text-primary mt-6 mb-3">Google Analytics (nur mit Einwilligung)</h3>
+          <p>
+            Wenn Du im Cookie-Hinweis zustimmst, nutze ich Google Analytics 4, einen Webanalysedienst der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Google Analytics setzt Cookies (z. B. „_ga“), um Seitenaufrufe auszuwerten. Dabei können Daten auch an Google LLC in den USA übertragen werden; Google ist unter dem EU-US Data Privacy Framework zertifiziert.<br />
+            Rechtsgrundlage ist Deine Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Du kannst sie jederzeit mit Wirkung für die Zukunft widerrufen: über den Link „Cookie-Einstellungen“ unten auf jeder Seite.<br />
+            Datenschutzerklärung von Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://policies.google.com/privacy</a>
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">8. Deine Rechte</h2>

@@ -10,7 +10,7 @@ import aboutImage from "@assets/travel_AI_model_generations_(7_1771595857206.png
 export default function About() {
   useSEO({
     title: "Über mich – Gudrun Murina, Heilpraktikerin für Psychotherapie",
-    description: "Gudrun Murina begleitet seit über 10 Jahren Menschen in Umbruchphasen und Lebenskrisen. Heilpraktikerin für Psychotherapie in Hagen. Mehr als 2.000 Menschen auf ihrem Weg begleitet.",
+    description: "Gudrun Murina begleitet seit über 10 Jahren Menschen in Umbruchphasen und Lebenskrisen. Heilpraktikerin für Psychotherapie in Schortens. Mehr als 2.000 Menschen auf ihrem Weg begleitet.",
     canonical: "https://lebenswendepunkt.de/ueber-mich",
   });
 

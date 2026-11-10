@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
+import { CookieBanner } from "@/components/CookieBanner";
 import Home from "@/pages/Home";
 import Offers from "@/pages/Offers";
 import Workbooks from "@/pages/Workbooks";
@@ -46,6 +47,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <CookieBanner />
       </TooltipProvider>
     </QueryClientProvider>
   );

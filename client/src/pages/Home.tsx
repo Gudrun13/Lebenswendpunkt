@@ -9,7 +9,7 @@ import { useSEO } from "@/hooks/useSEO";
 export default function Home() {
   useSEO({
     title: "Lebenswendepunkt – Gestärkt aus der Krise | Gudrun Murina",
-    description: "Psychologische Begleitung in Lebenskrisen, Trauer, Angst und Umbruchphasen. Gudrun Murina, Heilpraktikerin für Psychotherapie in Hagen. Gestärkt aus der Krise zu einem erfüllten Leben.",
+    description: "Psychologische Begleitung in Lebenskrisen, Trauer, Angst und Umbruchphasen. Gudrun Murina, Heilpraktikerin für Psychotherapie in Schortens. Gestärkt aus der Krise zu einem erfüllten Leben.",
     canonical: "https://lebenswendepunkt.de/",
     ogImage: "https://lebenswendepunkt.de/opengraph.jpg",
   });

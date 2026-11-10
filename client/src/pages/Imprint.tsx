@@ -16,11 +16,11 @@ export default function Imprint() {
       <div className="container mx-auto px-4 py-32 max-w-3xl">
         <h1 className="text-4xl md:text-5xl font-serif text-primary mb-8">Impressum</h1>
         <div className="prose prose-lg max-w-none text-foreground/80">
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Angaben gemäß § 5 TMG</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Angaben gemäß § 5 DDG</h2>
           <p>
             Gudrun Murina<br />
             Lebenswendepunkt<br />
-            Hagenstr. 1b<br />
+            Theodor-Heuss-Ring 14<br />
             26419 Schortens
           </p>
 
@@ -29,15 +29,11 @@ export default function Imprint() {
             E-Mail: <a href="mailto:lebenswendepunkt13@gmail.com" className="text-primary hover:underline">lebenswendepunkt13@gmail.com</a>
           </p>
 
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Umsatzsteuer-ID</h2>
+          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
           <p>
-            Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz: 70/130/17761
-          </p>
-
-          <h2 className="text-2xl font-serif text-primary mt-8 mb-4">EU-Streitschlichtung</h2>
-          <p>
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="http://ec.europa.eu/consumers/odr" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">http://ec.europa.eu/consumers/odr</a><br />
-            Unsere E-Mail-Adresse finden Sie oben im Impressum.
+            Berufsbezeichnung: Heilpraktikerin, beschränkt auf das Gebiet der Psychotherapie (verliehen in der Bundesrepublik Deutschland)<br />
+            Zuständige Aufsichtsbehörde: Gesundheitsamt der Landeshauptstadt München<br />
+            Berufsrechtliche Regelungen: Heilpraktikergesetz (HeilprG) und die Erste Durchführungsverordnung zum Heilpraktikergesetz, einsehbar unter <a href="https://www.gesetze-im-internet.de/heilprg/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.gesetze-im-internet.de/heilprg</a>
           </p>
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
@@ -47,7 +43,7 @@ export default function Imprint() {
 
           <h2 className="text-2xl font-serif text-primary mt-8 mb-4">Haftung für Inhalte</h2>
           <p>
-            Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
           </p>
           <p>
             Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.

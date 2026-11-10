@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { openCookieSettings } from "@/components/CookieBanner";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,6 +23,7 @@ export function Footer() {
               <li><Link href="/datenschutz" className="text-foreground/80 hover:text-primary transition-colors">Datenschutz</Link></li>
               <li><Link href="/agb" className="text-foreground/80 hover:text-primary transition-colors">AGB</Link></li>
               <li><Link href="/widerruf" className="text-foreground/80 hover:text-primary transition-colors">Widerruf</Link></li>
+              <li><button type="button" onClick={openCookieSettings} className="uppercase tracking-widest text-foreground/80 hover:text-primary transition-colors">Cookie-Einstellungen</button></li>
             </ul>
           </div>
         </div>

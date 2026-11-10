@@ -1,6 +1,10 @@
 RewriteEngine On
 RewriteBase /
 
+# Eine Hauptadresse: https://lebenswendepunkt.de (ohne www)
+RewriteCond %{HTTP_HOST} ^www\.lebenswendepunkt\.de$ [NC]
+RewriteRule ^ https://lebenswendepunkt.de%{REQUEST_URI} [L,R=301]
+
 # HTTPS erzwingen
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -10,5 +14,25 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Alle anderen Routen (z.B. /datenschutz, /agb, /blog/...) an index.html
-RewriteRule ^ index.html [L]
+# Bekannte Seiten der App an index.html
+RewriteRule ^(angebote|blog|workbooks|ueber-mich|newsletter|datenschutz|impressum|agb|widerruf)(/.*)?$ index.html [L]
+
+# Alles andere: echte 404-Antwort, die App zeigt die deutsche Fehlerseite
+ErrorDocument 404 /index.html
+RewriteRule ^.+$ - [R=404,L]
+
+# Sicherheits-Header
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Dateien mit Hash im Namen (assets/) dürfen lange im Browser bleiben
+<IfModule mod_headers.c>
+  <FilesMatch "^index-.*\.(js|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
