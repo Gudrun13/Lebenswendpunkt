@@ -235,5 +235,28 @@ export const blogPosts: BlogPost[] = [
       "Was in Dir längst da ist, eine Stimme, eine Gabe, eine Sehnsucht, kann mit Dir wachsen, Schritt für Schritt, mit Pausen, Umwegen und neuen Anläufen. Vielleicht bist Du gar nicht gescheitert. Vielleicht hast Du den Weg, auf dem Du gut ankommen kannst, einfach noch nicht gefunden.",
       "Welcher Satz begleitet Dich schon lange?"
     ]
+  },
+  {
+    id: "6",
+    slug: "sich-vergleichen-selbstwert",
+    title: "Die Birke vergleicht sich nicht mit der Eberesche",
+    excerpt: "Der hat mehr Erfolg, die hat die schönere Figur, bei den anderen läuft die Ehe besser. Das Vergleichen passiert von allein und so schnell, dass es Dir selten bewusst wird.",
+    metaTitle: "Sich vergleichen: Stärkt Dich das? | Lebenswendepunkt",
+    metaDescription: "Sich vergleichen ist nicht immer schlecht. Ich erzähle, woran ich merke, ob ein Vergleich meinen Selbstwert stärkt oder schwächt.",
+    date: "10. November 2026",
+    author: "Gudrun Murina",
+    readTime: "3 Min. Lesezeit",
+    content: [
+      "Der hat mehr Erfolg, die hat die schönere Figur, bei den anderen läuft die Ehe besser, die Kinder sind wohlgeratener, die Karriere steht. Das Vergleichen passiert von allein und so schnell, dass es Dir selten bewusst wird. Kommt Dir das auch bekannt vor?",
+      "An sich ist am Vergleichen nichts auszusetzen. Ich schaue jemanden an und denke: Wie schön, dass ich es anders habe. Oder: Wie gut, dass ich es nicht so habe wie die. Oder: So möchte ich es auch nicht haben. Das sind Vergleiche, und sie tun mir gut.",
+      "Schwierig wird es dort, wo meine Wünsche und meine Sehnsucht liegen. Der hat, was ich gern hätte, die kann, was ich gern könnte, bei dem läuft es besser als bei mir, er hat die bessere Entscheidung getroffen. Dann denke ich: So möchte ich es auch haben. Solche Vergleiche schwächen meinen Selbstwert.",
+      "Wenn ich denke, der hat es sowieso besser als ich, lohnt sich ein genauer Blick. Scheinbar und vermeintlich, das sind die wichtigen Wörter. Du siehst nur einen Ausschnitt, ein Foto, einen guten Tag, eine Fassade. In einen anderen Menschen hineinzuschauen, gelingt Dir selten, und was er getragen hat, um dort zu stehen, wo er steht, erfährst Du kaum. Ob bei ihm alles so toll ist, wie es aussieht, weiß ich nicht.",
+      "Neulich ist mir aufgefallen: Um sauber zu vergleichen, bräuchte ich jemanden, der genau mein Leben gelebt hat, mit demselben Weg, denselben Erfahrungen, denselben Fragen. Dann könnte ich sagen: „Der macht das so, ich mache es anders“ oder „Da schneide ich mir eine Scheibe ab“. Nur gibt es diesen Menschen nicht, nirgends, nicht einmal ungefähr. Der Vergleich hinkt also von Anfang an.",
+      "Erstaunlicherweise kann ich mich nicht einmal mit mir selbst vergleichen, denn vor fünf Jahren war vieles anders, als es jetzt ist. Da wird noch deutlicher, wie wenig ein Vergleich meinen Selbstwert stärkt.",
+      "Manchmal denke ich dabei an Bäume. Eine Birke käme nie auf die Idee, sich mit einer Eberesche zu vergleichen, und dabei sind beide Bäume, aus der gleichen Grundstruktur gemacht. Auch eine Kuh schielt nicht zum Pferd hinüber und fragt sich, wieso sie nicht so galoppiert. Beides sind Tiere, und jedes bleibt bei sich. Dieses Bild hilft mir, wenn ein Vergleich meinen Selbstwert schwächt. Den Seitenblick kennen nur Menschen, und mir hat er wenig Seelenfrieden gebracht.",
+      "In einem Podcast habe ich einen Satz gehört, der mir seitdem nachgeht: „Ich habe mich so lange mit dem verglichen, was andere haben und ich nicht, und ich habe damit aufgehört. Seitdem geht es mir viel besser.“ Mehr nicht. Und doch hat er etwas in mir angestoßen.",
+      "Jetzt bin ich dabei, das Vergleichen bei mir zu bemerken. Oft merke ich es erst, wenn ich schon mittendrin stecke. Dann frage ich mich: Tut mir dieser Vergleich gerade gut? Stärkt er mich? Wenn er mich schwächt, sage ich mir innerlich: Stopp, vergleichen ist nicht. Und ich schaue, was entsteht und was sich verändert, wenn ich bei mir und meinem eigenen Weg bleibe. Ich weiß es noch nicht ganz, und das ist gut so, denn ich probiere noch aus. Eine gewisse Leichtigkeit habe ich schon bemerkt, wenn ich das schwächende Vergleichen lasse und einen Stopp davor setze.",
+      "Wie ist das bei Dir? Welche Vergleiche tun Dir gut, und welche schwächen Dich? Was passiert in Deinem Körper, wenn Du Stopp sagst? Du kannst es ausprobieren, wenn Dir danach ist. Ich freue mich, wenn Du mir schreibst oder kommentierst, was Du dabei entdeckt hast, wenn Du magst."
+    ]
   }
 ];
