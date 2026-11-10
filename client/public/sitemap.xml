@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://lebenswendepunkt.de/blog</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -51,6 +51,12 @@
   <url>
     <loc>https://lebenswendepunkt.de/blog/saetze-die-dich-schon-lange-begleiten</loc>
     <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lebenswendepunkt.de/blog/sich-vergleichen-selbstwert</loc>
+    <lastmod>2026-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
