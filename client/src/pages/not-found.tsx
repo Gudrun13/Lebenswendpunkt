@@ -1,21 +1,38 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { AlertCircle } from "lucide-react";
+import { Link } from "wouter";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function NotFound() {
-  return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
-      <Card className="w-full max-w-md mx-4">
-        <CardContent className="pt-6">
-          <div className="flex mb-4 gap-2">
-            <AlertCircle className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl font-bold text-gray-900">404 Page Not Found</h1>
-          </div>
+  useSEO({
+    title: "Seite nicht gefunden – Lebenswendepunkt",
+    description: "Diese Seite gibt es leider nicht (mehr).",
+    canonical: "https://lebenswendepunkt.de/",
+    noIndex: true,
+  });
 
-          <p className="mt-4 text-sm text-gray-600">
-            Did you forget to add the page to the router?
-          </p>
-        </CardContent>
-      </Card>
+  return (
+    <div className="min-h-screen bg-stone-50 font-sans">
+      <Navigation />
+      <div className="container mx-auto px-4 py-32 max-w-3xl text-center">
+        <h1 className="text-4xl md:text-5xl font-serif text-primary mb-6">Diese Seite gibt es nicht</h1>
+        <p className="text-lg text-foreground/80 mb-10">
+          Vielleicht hat sich die Adresse geändert oder es hat sich ein Tippfehler eingeschlichen.
+          Hier findest Du weiter:
+        </p>
+        <nav aria-label="Weiterführende Seiten" className="flex flex-wrap justify-center gap-4">
+          <Link href="/" className="inline-flex items-center rounded-md bg-primary px-6 py-3 text-primary-foreground hover:opacity-90">
+            Zur Startseite
+          </Link>
+          <Link href="/angebote" className="inline-flex items-center rounded-md border border-primary px-6 py-3 text-primary hover:bg-primary/5">
+            Angebote
+          </Link>
+          <Link href="/blog" className="inline-flex items-center rounded-md border border-primary px-6 py-3 text-primary hover:bg-primary/5">
+            Blog
+          </Link>
+        </nav>
+      </div>
+      <Footer />
     </div>
   );
 }

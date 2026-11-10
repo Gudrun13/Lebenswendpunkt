@@ -39,9 +39,9 @@ export function Navigation() {
         {/* Mobile Nav */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon" className="text-primary">
-              <Menu className="h-6 w-6" />
-              <span className="sr-only">Toggle menu</span>
+            <Button variant="ghost" size="icon" className="h-12 w-12 text-primary">
+              <Menu className="h-7 w-7" />
+              <span className="sr-only">Menü öffnen</span>
             </Button>
           </SheetTrigger>
           <SheetContent side="right" className="bg-background border-l-white/10">
