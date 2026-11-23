@@ -258,5 +258,39 @@ export const blogPosts: BlogPost[] = [
       "Jetzt bin ich dabei, das Vergleichen bei mir zu bemerken. Oft merke ich es erst, wenn ich schon mittendrin stecke. Dann frage ich mich: Tut mir dieser Vergleich gerade gut? Stärkt er mich? Wenn er mich schwächt, sage ich mir innerlich: Stopp, vergleichen ist nicht. Und ich schaue, was entsteht und was sich verändert, wenn ich bei mir und meinem eigenen Weg bleibe. Ich weiß es noch nicht ganz, und das ist gut so, denn ich probiere noch aus. Eine gewisse Leichtigkeit habe ich schon bemerkt, wenn ich das schwächende Vergleichen lasse und einen Stopp davor setze.",
       "Wie ist das bei Dir? Welche Vergleiche tun Dir gut, und welche schwächen Dich? Was passiert in Deinem Körper, wenn Du Stopp sagst? Du kannst es ausprobieren, wenn Dir danach ist. Ich freue mich, wenn Du mir schreibst oder kommentierst, was Du dabei entdeckt hast, wenn Du magst."
     ]
+  },
+  {
+    id: "7",
+    slug: "lassen-statt-loslassen",
+    title: "Lassen statt loslassen",
+    excerpt: "Ein Wort mag ich in der Tiefe meines Herzens nicht: loslassen. Es wird so oft benutzt, und meistens schwingt etwas mit, das mir gar nicht gefällt.",
+    metaTitle: "Lassen statt loslassen: Der Unterschied | Lebenswendepunkt",
+    metaDescription: "Loslassen setzt Festhalten voraus und klingt oft nach Druck. Warum Lassen mehr Wahlmöglichkeiten schenkt, mit einem Beispiel aus dem Alltag.",
+    date: "23. November 2026",
+    author: "Gudrun Murina",
+    readTime: "4 Min. Lesezeit",
+    content: [
+      "Ein Wort mag ich in der Tiefe meines Herzens nicht: loslassen. Es wird so oft benutzt, und meistens schwingt etwas mit, das mir gar nicht gefällt: Du bist noch nicht so weit. Erst wenn Du loslässt, bist Du es. Als gäbe es eine Rangordnung, und wer loslässt, steht weiter oben.",
+      "Loslassen hat mit Festhalten zu tun",
+      "Loslassen hat immer mit Festhalten zu tun. Und loslassen soll ich meistens Dinge, die mir nicht guttun, vermeintlich, oder von denen andere meinen, dass sie mir nicht guttun. Sonst würde mir ja nicht so oft jemand sagen: Das musst Du loslassen. Im Gespräch höre ich mich selbst manchmal sagen: Ich muss es halt loslassen.",
+      "Und dann denke ich oft: Wofür eigentlich? Und was entsteht stattdessen?",
+      "Lassen ist eine Entscheidung",
+      "Mir hilft ein anderes Wort: lassen.",
+      "Lassen ist eine Entscheidung. Ich tue etwas nicht mehr. Ich lasse eine Begegnung sein, die mir nicht guttut. Und im Lassen steckt noch eine zweite Richtung: Ich lasse etwas so sein, wie es ist. Ein Gefühl, einen Menschen, eine Situation. Dann entsteht Raum, weil ich nicht mehr an etwas herumarbeite.",
+      "Auch Gedanken lassen sich lassen",
+      "Bei Gedanken ist das ganz ähnlich. Gedanken wirken, und oft denken wir sie einfach so vor uns hin. Wenn ich einen Gedanken loslassen will, beschäftige ich mich schon wieder mit ihm: Wie soll ich das nur loslassen, ich müsste das doch endlich können. Sage ich dagegen: Diesen Gedanken lasse ich, und ich denke jetzt etwas anderes, habe ich mir einen Raum geschaffen, es anders zu machen.",
+      "Manchmal halte ich sogar am Loslassen fest. Ich will es unbedingt, ich übe, ich versuche es noch einmal, und genau damit halte ich fest. Wer am Loslassen festhält, lässt nicht los. Dann hilft es mir, das Loslassen selbst zu lassen. Ich brauche es nicht zu schaffen. Ich lasse auch das Loslassen sein.",
+      "Ein Beispiel: die Pünktlichkeit",
+      "Mein liebstes Beispiel ist die Pünktlichkeit. Du sitzt vor dem Zoom, im Seminar oder in einer Besprechung, und Du bist pünktlich da, weil Du Dich dafür auf den Weg gemacht hast. Und dann wartet man noch, bis alle da sind. Oder man fängt an, und wenn die Letzten kommen, wird alles noch einmal wiederholt. Mich ärgert das sehr. Ich habe mich auf den Weg gemacht, um pünktlich zu sein, und genau die, die das nicht getan haben, bekommen den Anfang noch einmal erzählt.",
+      "Deshalb schätze ich es so, wenn etwas pünktlich beginnt. Im Kino läuft zwar erst die Werbung, doch ohne sie finge der Film pünktlich an. Ein klassisches Konzert beginnt pünktlich, weil jeder alles andere zurückgestellt hat, um zum Anfang da zu sein.",
+      "Was beim Loslassen zu kurz kommt",
+      "Wenn ich nun versuche, diesen Ärger loszulassen, wird er nicht gewürdigt, denn er soll ja weg. Vielleicht kommt genau das beim Loslassen oft zu kurz: das eigene Gefühl und das, was darin steckt. Denn hinter meinem Ärger steht ein Wert: Ich achte die Zeit der Menschen, die da sind.",
+      "Wenn ich den Ärger dagegen lasse, nehme ich ihn ernst. Ich sage mir: Ja, das ärgert mich, und das nervt mich. Mein Gefühl bleibt da, der Wert auch, und ich entscheide, wie viel Raum der Ärger bekommt. Mit dem Lassen tue ich mir meistens etwas Gutes, weil ich weiß, es ist so. Und um meinem System Ruhe zu geben, handle ich: Wenn ich den Zoom leite, sage ich einfach, wir fangen jetzt an. Wer später dazukommt, wird freundlich begrüßt, und damit hat sich das.",
+      "Mehr Wahl in Deiner Welt",
+      "Wenn ich lasse, habe ich in meiner Welt wesentlich mehr Wahlmöglichkeiten, als wenn ich loslasse. Bei vielen Dingen geht es gar nicht ums Loslassen, sondern ums Verändern.",
+      "Beim Loslassen gibt es nur fest oder los. Beim Lassen habe ich die Wahl.",
+      "Was wäre, wenn Du Dir beim nächsten Ärger diese eine Frage stellst: Lasse ich das jetzt, oder ärgere ich mich?",
+      "Ich wünsche Dir, dass Du manches einfach sein lassen kannst."
+    ]
   }
 ];
